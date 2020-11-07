@@ -10,8 +10,6 @@ import UIKit
 class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var tvMedit: UITableView!
-    
-
     @IBOutlet weak var cvSecciones: UICollectionView!
     
     var ListaMeditaciones = [
@@ -22,6 +20,8 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Meditaciones"
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         

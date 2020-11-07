@@ -12,6 +12,7 @@ class ViewControllerHistorial: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Historial"
         // Do any additional setup after loading the view.
     }
     
