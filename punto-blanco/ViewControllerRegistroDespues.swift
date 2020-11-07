@@ -12,6 +12,7 @@ class ViewControllerRegistroDespues: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Para terminar"
         // Do any additional setup after loading the view.
     }
     

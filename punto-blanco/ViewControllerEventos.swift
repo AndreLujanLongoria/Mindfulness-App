@@ -20,6 +20,8 @@ class ViewControllerEventos: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Eventos"
+        
         self.tvEventos.delegate = self
         self.tvEventos.dataSource = self
     }

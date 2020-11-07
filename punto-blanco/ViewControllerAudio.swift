@@ -11,10 +11,11 @@ import UIKit
 
 class ViewControllerAudio: UIViewController {
 
-    
+    /*
     var estadoPista = "Pause"
     @IBOutlet weak var btPlayPause: UIButton!
     let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,7 @@ class ViewControllerAudio: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    /*
     @objc func fireTimer() {
         print("Se acabo el tiempo!")
     }
@@ -35,17 +37,5 @@ class ViewControllerAudio: UIViewController {
             estadoPista = "Pause"
         }
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
     */
-
 }

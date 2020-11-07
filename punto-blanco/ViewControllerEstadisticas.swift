@@ -11,7 +11,7 @@ class ViewControllerEstadisticas: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "Estadisticas"
         // Do any additional setup after loading the view.
     }
     
