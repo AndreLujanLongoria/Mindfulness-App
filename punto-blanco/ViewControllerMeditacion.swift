@@ -7,10 +7,12 @@
 
 import UIKit
 
-class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var tvMedit: UITableView!
+    
+
+    @IBOutlet weak var cvSecciones: UICollectionView!
     
     var ListaMeditaciones = [
         Meditaciones(Nombre: "Empatía", foto: UIImage(named: "empatia")),
@@ -20,9 +22,15 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        
+        cvSecciones.register(CollectionViewCellSecciones.nib(), forCellWithReuseIdentifier: CollectionViewCellSecciones.identifier)
+
         self.tvMedit.delegate = self
         self.tvMedit.dataSource = self
+        self.cvSecciones.delegate = self
+        self.cvSecciones.dataSource = self
     }
     
     @IBAction func unwindRegistro (unwindSegue: UIStoryboardSegue){
@@ -41,6 +49,19 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
         return celda
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 15
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let item = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellSecciones.identifier, for: indexPath) as! CollectionViewCellSecciones
+        
+        item.configure(with: UIImage(named: "meditarItem")!)
+        item.configureLabel(with: "Seccion")
+        
+        return item
+    }
+    
     
     /*
     // MARK: - Navigation
@@ -52,4 +73,10 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
     }
     */
 
+}
+
+extension ViewControllerMeditacion:UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 120, height: 120)
+    }
 }
