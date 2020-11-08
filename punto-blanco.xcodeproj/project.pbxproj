@@ -34,6 +34,7 @@
 		EC0FAE432557D80700366370 /* InicioDeSesion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE422557D80700366370 /* InicioDeSesion.storyboard */; };
 		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
 		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
+		ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC10D7D2558643300CA9FA3 /* Historial.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +84,11 @@
 		EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meditaciones.storyboard; sourceTree = "<group>"; };
 		EC0FAE322557D76000366370 /* Usuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Usuario.storyboard; sourceTree = "<group>"; };
 		EC0FAE372557D77E00366370 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		EC0FAE3C2557D79400366370 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
 		EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
 		EC0FAE422557D80700366370 /* InicioDeSesion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InicioDeSesion.storyboard; sourceTree = "<group>"; };
 		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSecciones.swift; sourceTree = "<group>"; };
 		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
+		ECC10D7D2558643300CA9FA3 /* Historial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Historial.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,9 +189,9 @@
 				EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */,
 				EC0FAE322557D76000366370 /* Usuario.storyboard */,
 				EC0FAE372557D77E00366370 /* Home.storyboard */,
-				EC0FAE3C2557D79400366370 /* CollectionViewCellSecciones.xib */,
 				EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */,
 				EC0FAE422557D80700366370 /* InicioDeSesion.storyboard */,
+				ECC10D7D2558643300CA9FA3 /* Historial.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -304,6 +305,7 @@
 				CDD9A3FD2552551100DFD5CA /* LaunchScreen.storyboard in Resources */,
 				CDD9A3FA2552551100DFD5CA /* Assets.xcassets in Resources */,
 				CDD9A3F82552551000DFD5CA /* Main.storyboard in Resources */,
+				ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */,
 				EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */,
 				EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */,
 				EC0FAE432557D80700366370 /* InicioDeSesion.storyboard in Resources */,
