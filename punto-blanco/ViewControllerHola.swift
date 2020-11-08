@@ -9,8 +9,7 @@ import UIKit
 
 class ViewControllerHola: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
+    @IBOutlet weak var imgPuntoBlanco: UIImageView!
     @IBOutlet weak var tvRetos: UITableView!
     
     
@@ -22,6 +21,9 @@ class ViewControllerHola: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Hola"
+        
+        imgPuntoBlanco.layer.cornerRadius = 30
         self.tvRetos.delegate = self
         self.tvRetos.dataSource = self
     }

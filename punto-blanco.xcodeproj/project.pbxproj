@@ -27,6 +27,11 @@
 		CDD9A4132552551100DFD5CA /* punto_blancoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A4122552551100DFD5CA /* punto_blancoUITests.swift */; };
 		CDD9A42425525AE500DFD5CA /* ViewControllerHola.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */; };
 		CDD9A4292552621000DFD5CA /* ViewControllerEstadisticas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A4282552621000DFD5CA /* ViewControllerEstadisticas.swift */; };
+		EC0FAE2E2557D72400366370 /* Meditaciones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */; };
+		EC0FAE332557D76000366370 /* Usuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE322557D76000366370 /* Usuario.storyboard */; };
+		EC0FAE382557D77E00366370 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE372557D77E00366370 /* Home.storyboard */; };
+		EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */; };
+		EC0FAE432557D80700366370 /* InicioDeSesion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE422557D80700366370 /* InicioDeSesion.storyboard */; };
 		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
 		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
 /* End PBXBuildFile section */
@@ -75,6 +80,12 @@
 		CDD9A4142552551100DFD5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHola.swift; sourceTree = "<group>"; };
 		CDD9A4282552621000DFD5CA /* ViewControllerEstadisticas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEstadisticas.swift; sourceTree = "<group>"; };
+		EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meditaciones.storyboard; sourceTree = "<group>"; };
+		EC0FAE322557D76000366370 /* Usuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Usuario.storyboard; sourceTree = "<group>"; };
+		EC0FAE372557D77E00366370 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EC0FAE3C2557D79400366370 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
+		EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
+		EC0FAE422557D80700366370 /* InicioDeSesion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InicioDeSesion.storyboard; sourceTree = "<group>"; };
 		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCellSecciones.swift; path = "../../Archive/punto-blanco/CollectionViewCellSecciones.swift"; sourceTree = "<group>"; };
 		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCellSecciones.xib; path = "../../Archive/punto-blanco/CollectionViewCellSecciones.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +138,7 @@
 		CDD9A3EF2552551000DFD5CA /* punto-blanco */ = {
 			isa = PBXGroup;
 			children = (
+				EC0FAE2C2557D70400366370 /* Storyboards */,
 				CDD9A3F02552551000DFD5CA /* AppDelegate.swift */,
 				CDD9A3F22552551000DFD5CA /* SceneDelegate.swift */,
 				CDD9A3F42552551000DFD5CA /* ViewController.swift */,
@@ -168,6 +180,19 @@
 				CDD9A4142552551100DFD5CA /* Info.plist */,
 			);
 			path = "punto-blancoUITests";
+			sourceTree = "<group>";
+		};
+		EC0FAE2C2557D70400366370 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */,
+				EC0FAE322557D76000366370 /* Usuario.storyboard */,
+				EC0FAE372557D77E00366370 /* Home.storyboard */,
+				EC0FAE3C2557D79400366370 /* CollectionViewCellSecciones.xib */,
+				EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */,
+				EC0FAE422557D80700366370 /* InicioDeSesion.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +298,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0FAE382557D77E00366370 /* Home.storyboard in Resources */,
+				EC0FAE2E2557D72400366370 /* Meditaciones.storyboard in Resources */,
+				EC0FAE332557D76000366370 /* Usuario.storyboard in Resources */,
 				CDD9A3FD2552551100DFD5CA /* LaunchScreen.storyboard in Resources */,
 				CDD9A3FA2552551100DFD5CA /* Assets.xcassets in Resources */,
 				CDD9A3F82552551000DFD5CA /* Main.storyboard in Resources */,
 				EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */,
+				EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */,
+				EC0FAE432557D80700366370 /* InicioDeSesion.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
