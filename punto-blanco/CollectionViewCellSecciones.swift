@@ -9,24 +9,27 @@ import UIKit
 
 class CollectionViewCellSecciones: UICollectionViewCell {
 
-    
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var lbSeccion: UILabel!
+    @IBOutlet weak var buttonSection: UIButton!
     
     static let identifier = "CollectionViewCellSecciones"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        buttonSection.clipsToBounds = true
+        buttonSection.layer.masksToBounds = true
+        buttonSection.layer.cornerRadius = 20
     }
     
+    /*
     public func configure(with image: UIImage){
         imageView.image = image
     }
+    */
     
-    public func configureLabel(with label: String){
-        lbSeccion.text = label
+    public func configure(with name: String){
+        buttonSection.titleLabel?.text = name
     }
+    
     
     static func nib() -> UINib{
         return UINib(nibName: "CollectionViewCellSecciones", bundle: nil)

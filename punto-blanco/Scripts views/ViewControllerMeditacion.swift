@@ -44,32 +44,31 @@ class ViewControllerMeditacion: UIViewController {
 extension ViewControllerMeditacion : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 12
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let item = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellSecciones.identifier, for: indexPath) as! CollectionViewCellSecciones
         
-        item.configure(with: UIImage(named: "meditarItem")!)
-        item.configureLabel(with: "Seccion")
+        item.configure(with: "Seccion")
         
         return item
     }
-    
+    /*
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120, height: 120)
     }
+     */
 }
 
 extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ListaMeditaciones.count
+        return ListaMeditaciones.count + 4
     }
     
     func tableView(_ tabliew: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tvMedit.dequeueReusableCell(withIdentifier: "customCell") as! TableViewCellMeditaciones
-        celda.textLabel?.text = ListaMeditaciones[indexPath.row].Nombre
-        celda.imageView?.image = ListaMeditaciones[indexPath.row].foto
+        celda.imgCustom.image = UIImage(named: "MujerNadando")
         
         return celda
     }

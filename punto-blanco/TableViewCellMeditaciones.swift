@@ -11,6 +11,7 @@ class TableViewCellMeditaciones: UITableViewCell {
 
     static let identifier = "customCell"
     
+    @IBOutlet weak var imgCustom: UIImageView!
     @IBOutlet weak var customCell: UIView!
     
     override func awakeFromNib() {
