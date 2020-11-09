@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewControllerMeditacion: UIViewController {
     
     @IBOutlet weak var tvMedit: UITableView!
     @IBOutlet weak var cvSecciones: UICollectionView!
@@ -16,6 +16,12 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
         Meditaciones(Nombre: "Empatía", foto: UIImage(named: "empatia")),
         Meditaciones(Nombre: "Luz", foto: UIImage(named: "luz"))
     ]
+    
+    /*
+     ---Nombre de variables----
+     tvMedit = table view meditaciones
+     cvSecciones = collective view secciones
+     */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,31 +32,19 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
         layout.scrollDirection = .horizontal
         
         cvSecciones.register(CollectionViewCellSecciones.nib(), forCellWithReuseIdentifier: CollectionViewCellSecciones.identifier)
+        tvMedit.register(TableViewCellMeditaciones.nib(), forCellReuseIdentifier: TableViewCellMeditaciones.identifier)
 
         self.tvMedit.delegate = self
         self.tvMedit.dataSource = self
         self.cvSecciones.delegate = self
         self.cvSecciones.dataSource = self
     }
-    
-    @IBAction func unwindRegistro (unwindSegue: UIStoryboardSegue){
-        
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ListaMeditaciones.count
-    }
-    
-    func tableView(_ tabliew: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celda = tvMedit.dequeueReusableCell(withIdentifier: "celda")!
-        celda.textLabel?.text = ListaMeditaciones[indexPath.row].Nombre
-        celda.imageView?.image = ListaMeditaciones[indexPath.row].foto
-        
-        return celda
-    }
+}
+
+extension ViewControllerMeditacion : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -62,21 +56,21 @@ class ViewControllerMeditacion: UIViewController, UITableViewDelegate, UITableVi
         return item
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-extension ViewControllerMeditacion:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120, height: 120)
+    }
+}
+
+extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ListaMeditaciones.count
+    }
+    
+    func tableView(_ tabliew: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celda = tvMedit.dequeueReusableCell(withIdentifier: "customCell") as! TableViewCellMeditaciones
+        celda.textLabel?.text = ListaMeditaciones[indexPath.row].Nombre
+        celda.imageView?.image = ListaMeditaciones[indexPath.row].foto
+        
+        return celda
     }
 }
