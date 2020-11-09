@@ -92,7 +92,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-4545" y="173"/>
+            <point key="canvasLocation" x="-2559" y="-546"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="37w-0j-WkA">
@@ -141,7 +141,7 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-3737" y="170"/>
+            <point key="canvasLocation" x="-1751" y="-547"/>
         </scene>
         <!--Home-->
         <scene sceneID="G5g-VL-QId">
@@ -231,7 +231,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-5484" y="169"/>
+            <point key="canvasLocation" x="-3388" y="-546"/>
         </scene>
     </scenes>
     <resources>
