@@ -22,7 +22,6 @@
 		CDD9A3F52552551000DFD5CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A3F42552551000DFD5CA /* ViewController.swift */; };
 		CDD9A3F82552551000DFD5CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD9A3F62552551000DFD5CA /* Main.storyboard */; };
 		CDD9A3FA2552551100DFD5CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD9A3F92552551100DFD5CA /* Assets.xcassets */; };
-		CDD9A3FD2552551100DFD5CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD9A3FB2552551100DFD5CA /* LaunchScreen.storyboard */; };
 		CDD9A4082552551100DFD5CA /* punto_blancoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A4072552551100DFD5CA /* punto_blancoTests.swift */; };
 		CDD9A4132552551100DFD5CA /* punto_blancoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A4122552551100DFD5CA /* punto_blancoUITests.swift */; };
 		CDD9A42425525AE500DFD5CA /* ViewControllerHola.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */; };
@@ -36,6 +35,8 @@
 		EC97535B2558F7F600E669CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC97535A2558F7F600E669CB /* AVFoundation.framework */; };
 		EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */; };
 		ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC10D7D2558643300CA9FA3 /* Historial.storyboard */; };
+		ECE422E62559031000B55FA0 /* TableViewCellMeditaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE422E42559031000B55FA0 /* TableViewCellMeditaciones.swift */; };
+		ECE422E72559031000B55FA0 /* TableViewCellMeditaciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECE422E52559031000B55FA0 /* TableViewCellMeditaciones.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,6 @@
 		CDD9A3F42552551000DFD5CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDD9A3F72552551000DFD5CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDD9A3F92552551100DFD5CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CDD9A3FC2552551100DFD5CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDD9A3FE2552551100DFD5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDD9A4032552551100DFD5CA /* punto-blancoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "punto-blancoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD9A4072552551100DFD5CA /* punto_blancoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = punto_blancoTests.swift; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		EC97535A2558F7F600E669CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mediacion guiada 5 minutos.mp3"; sourceTree = "<group>"; };
 		ECC10D7D2558643300CA9FA3 /* Historial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Historial.storyboard; sourceTree = "<group>"; };
+		ECE422E42559031000B55FA0 /* TableViewCellMeditaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMeditaciones.swift; sourceTree = "<group>"; };
+		ECE422E52559031000B55FA0 /* TableViewCellMeditaciones.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellMeditaciones.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,29 +145,16 @@
 		CDD9A3EF2552551000DFD5CA /* punto-blanco */ = {
 			isa = PBXGroup;
 			children = (
-				EC97535C2558F81600E669CB /* Music */,
-				EC0FAE2C2557D70400366370 /* Storyboards */,
+				CDD9A3F62552551000DFD5CA /* Main.storyboard */,
 				CDD9A3F02552551000DFD5CA /* AppDelegate.swift */,
 				CDD9A3F22552551000DFD5CA /* SceneDelegate.swift */,
-				CDD9A3F42552551000DFD5CA /* ViewController.swift */,
-				CDD9A3F62552551000DFD5CA /* Main.storyboard */,
-				AAE27D1A25546073002E5005 /* Reto.swift */,
-				AAE27D1525545C67002E5005 /* Evento.swift */,
-				AAEA5757255383E4006222B9 /* Meditaciones.swift */,
+				ECE422EE2559032B00B55FA0 /* Scripts views */,
+				EC97535C2558F81600E669CB /* Music */,
+				EC0FAE2C2557D70400366370 /* Storyboards */,
+				ECE422E42559031000B55FA0 /* TableViewCellMeditaciones.swift */,
 				EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */,
-				EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */,
-				CD0CA1CF2552713000C959AE /* ViewControllerRegistroAntes.swift */,
-				CD0CA1D42552714600C959AE /* ViewControllerAudio.swift */,
-				CD0CA1D92552715A00C959AE /* ViewControllerRegistroDespues.swift */,
-				CD0CA1CA255270F800C959AE /* ViewControllerEventos.swift */,
-				CD0CA1C525526D6900C959AE /* ViewControllerMeditacion.swift */,
-				CD0CA1BB25526C6000C959AE /* ViewControllerHistorial.swift */,
-				CD0CA1C025526C7800C959AE /* ViewControllerPerfil.swift */,
-				CDD9A4282552621000DFD5CA /* ViewControllerEstadisticas.swift */,
-				CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */,
-				CDD9A3F92552551100DFD5CA /* Assets.xcassets */,
-				CDD9A3FB2552551100DFD5CA /* LaunchScreen.storyboard */,
 				CDD9A3FE2552551100DFD5CA /* Info.plist */,
+				CDD9A3F92552551100DFD5CA /* Assets.xcassets */,
 			);
 			path = "punto-blanco";
 			sourceTree = "<group>";
@@ -196,6 +185,8 @@
 				EC0FAE372557D77E00366370 /* Home.storyboard */,
 				EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */,
 				ECC10D7D2558643300CA9FA3 /* Historial.storyboard */,
+				EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */,
+				ECE422E52559031000B55FA0 /* TableViewCellMeditaciones.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -214,6 +205,26 @@
 				EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */,
 			);
 			path = Music;
+			sourceTree = "<group>";
+		};
+		ECE422EE2559032B00B55FA0 /* Scripts views */ = {
+			isa = PBXGroup;
+			children = (
+				AAE27D1A25546073002E5005 /* Reto.swift */,
+				AAE27D1525545C67002E5005 /* Evento.swift */,
+				AAEA5757255383E4006222B9 /* Meditaciones.swift */,
+				CDD9A3F42552551000DFD5CA /* ViewController.swift */,
+				CD0CA1CF2552713000C959AE /* ViewControllerRegistroAntes.swift */,
+				CD0CA1D42552714600C959AE /* ViewControllerAudio.swift */,
+				CD0CA1D92552715A00C959AE /* ViewControllerRegistroDespues.swift */,
+				CD0CA1CA255270F800C959AE /* ViewControllerEventos.swift */,
+				CD0CA1C525526D6900C959AE /* ViewControllerMeditacion.swift */,
+				CD0CA1BB25526C6000C959AE /* ViewControllerHistorial.swift */,
+				CD0CA1C025526C7800C959AE /* ViewControllerPerfil.swift */,
+				CDD9A4282552621000DFD5CA /* ViewControllerEstadisticas.swift */,
+				CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */,
+			);
+			path = "Scripts views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,9 +331,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0FAE382557D77E00366370 /* Home.storyboard in Resources */,
+				ECE422E72559031000B55FA0 /* TableViewCellMeditaciones.xib in Resources */,
 				EC0FAE2E2557D72400366370 /* Meditaciones.storyboard in Resources */,
 				EC0FAE332557D76000366370 /* Usuario.storyboard in Resources */,
-				CDD9A3FD2552551100DFD5CA /* LaunchScreen.storyboard in Resources */,
 				CDD9A3FA2552551100DFD5CA /* Assets.xcassets in Resources */,
 				CDD9A3F82552551000DFD5CA /* Main.storyboard in Resources */,
 				EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */,
@@ -355,6 +366,7 @@
 			files = (
 				CDD9A4292552621000DFD5CA /* ViewControllerEstadisticas.swift in Sources */,
 				CDD9A3F52552551000DFD5CA /* ViewController.swift in Sources */,
+				ECE422E62559031000B55FA0 /* TableViewCellMeditaciones.swift in Sources */,
 				CD0CA1BC25526C6000C959AE /* ViewControllerHistorial.swift in Sources */,
 				AAEA5758255383E4006222B9 /* Meditaciones.swift in Sources */,
 				CDD9A3F12552551000DFD5CA /* AppDelegate.swift in Sources */,
@@ -410,14 +422,6 @@
 				CDD9A3F72552551000DFD5CA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CDD9A3FB2552551100DFD5CA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDD9A3FC2552551100DFD5CA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
