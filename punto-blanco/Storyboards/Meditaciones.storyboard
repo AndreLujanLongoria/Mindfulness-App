@@ -184,6 +184,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="He terminado"/>
                                 <connections>
+                                    <action selector="heTerminadoButton:" destination="OzE-RZ-gVU" eventType="touchUpInside" id="ibu-ig-hdL"/>
                                     <segue destination="MiY-fi-pA3" kind="show" id="ujA-Y8-I2p"/>
                                 </connections>
                             </button>
@@ -191,6 +192,9 @@
                                 <rect key="frame" x="142" y="405" width="91" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="play-btn"/>
+                                <connections>
+                                    <action selector="playButton:" destination="OzE-RZ-gVU" eventType="touchUpInside" id="veX-3D-4Ij"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gsc-Cx-3NW">
                                 <rect key="frame" x="31" y="76" width="313" height="4"/>
@@ -201,6 +205,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RBw-9c-cYO"/>
+                    <connections>
+                        <outlet property="playButton" destination="NwD-X1-7ee" id="yby-Fo-t1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fh-9v-eUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

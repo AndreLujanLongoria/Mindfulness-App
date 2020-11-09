@@ -33,6 +33,8 @@
 		EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */; };
 		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
 		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
+		EC97535B2558F7F600E669CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC97535A2558F7F600E669CB /* AVFoundation.framework */; };
+		EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */; };
 		ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC10D7D2558643300CA9FA3 /* Historial.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
 		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSecciones.swift; sourceTree = "<group>"; };
 		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
+		EC97535A2558F7F600E669CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mediacion guiada 5 minutos.mp3"; sourceTree = "<group>"; };
 		ECC10D7D2558643300CA9FA3 /* Historial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Historial.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC97535B2558F7F600E669CB /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +126,7 @@
 				CDD9A4062552551100DFD5CA /* punto-blancoTests */,
 				CDD9A4112552551100DFD5CA /* punto-blancoUITests */,
 				CDD9A3EE2552551000DFD5CA /* Products */,
+				EC9753592558F7F500E669CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +143,7 @@
 		CDD9A3EF2552551000DFD5CA /* punto-blanco */ = {
 			isa = PBXGroup;
 			children = (
+				EC97535C2558F81600E669CB /* Music */,
 				EC0FAE2C2557D70400366370 /* Storyboards */,
 				CDD9A3F02552551000DFD5CA /* AppDelegate.swift */,
 				CDD9A3F22552551000DFD5CA /* SceneDelegate.swift */,
@@ -191,6 +198,22 @@
 				ECC10D7D2558643300CA9FA3 /* Historial.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EC9753592558F7F500E669CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC97535A2558F7F600E669CB /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC97535C2558F81600E669CB /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +325,7 @@
 				CDD9A3FD2552551100DFD5CA /* LaunchScreen.storyboard in Resources */,
 				CDD9A3FA2552551100DFD5CA /* Assets.xcassets in Resources */,
 				CDD9A3F82552551000DFD5CA /* Main.storyboard in Resources */,
+				EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */,
 				ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */,
 				EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */,
 				EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */,
