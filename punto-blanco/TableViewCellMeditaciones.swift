@@ -11,9 +11,12 @@ class TableViewCellMeditaciones: UITableViewCell {
 
     static let identifier = "customCell"
     
+    @IBOutlet weak var customCell: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        customCell.clipsToBounds = true
+        customCell.layer.cornerRadius = 30
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
