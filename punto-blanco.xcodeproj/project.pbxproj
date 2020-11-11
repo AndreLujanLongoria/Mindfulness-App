@@ -31,6 +31,7 @@
 		EC0FAE382557D77E00366370 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE372557D77E00366370 /* Home.storyboard */; };
 		EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */; };
 		EC34D280255C93CD00A73810 /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */; };
+		EC34D28B255CA2BD00A73810 /* ViewControllerAceptarEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34D28A255CA2BD00A73810 /* ViewControllerAceptarEvento.swift */; };
 		EC6E1224255C743F00358557 /* ViewControllerMeditationReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */; };
 		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
 		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
@@ -89,6 +90,7 @@
 		EC0FAE372557D77E00366370 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
 		EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignUp.swift; sourceTree = "<group>"; };
+		EC34D28A255CA2BD00A73810 /* ViewControllerAceptarEvento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAceptarEvento.swift; sourceTree = "<group>"; };
 		EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMeditationReview.swift; sourceTree = "<group>"; };
 		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSecciones.swift; sourceTree = "<group>"; };
 		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				CDD9A4282552621000DFD5CA /* ViewControllerEstadisticas.swift */,
 				CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */,
 				EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */,
+				EC34D28A255CA2BD00A73810 /* ViewControllerAceptarEvento.swift */,
 				EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */,
 			);
 			path = "Scripts views";
@@ -378,6 +381,7 @@
 				CDD9A3F12552551000DFD5CA /* AppDelegate.swift in Sources */,
 				CDD9A42425525AE500DFD5CA /* ViewControllerHola.swift in Sources */,
 				CD0CA1CB255270F800C959AE /* ViewControllerEventos.swift in Sources */,
+				EC34D28B255CA2BD00A73810 /* ViewControllerAceptarEvento.swift in Sources */,
 				CD0CA1C625526D6900C959AE /* ViewControllerMeditacion.swift in Sources */,
 				CDD9A3F32552551000DFD5CA /* SceneDelegate.swift in Sources */,
 				CD0CA1D52552714600C959AE /* ViewControllerAudio.swift in Sources */,
