@@ -1,32 +1,29 @@
 //
-//  ViewController.swift
+//  ViewControllerSignUp.swift
 //  punto-blanco
 //
-//  Created by user181032 on 11/3/20.
+//  Created by user180479 on 11/11/20.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewControllerSignUp: UIViewController {
 
-    
     @IBOutlet weak var tfUsername: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
-    
+    @IBOutlet weak var signupButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButton.layer.cornerRadius = 20
+        title = "Sign up"
+        signupButton.layer.cornerRadius = 25
     }
-
+    
     @IBAction func quitaTeclado () {
         view.endEditing(true)
     }
-    
-    @IBAction func loginTapped(_ sender: UIButton) {
-        // ...
-        // after login is done, maybe put this in the login web service completion block
+
+    @IBAction func signupButton(_ sender: UIButton) {
         if(tfUsername.text != "" && tfPassword.text != ""){
             registrarDatosDelUsuario()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -55,8 +52,6 @@ class ViewController: UIViewController {
         defaults.set(name, forKey: "username")
         let password = tfPassword.text
         defaults.set(password, forKey: "password")
-        
     }
-
+    
 }
-

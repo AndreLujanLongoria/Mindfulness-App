@@ -58,9 +58,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAZ-Tw-acU">
-                                <rect key="frame" x="73" y="399" width="226" height="36"/>
+                                <rect key="frame" x="77" y="421" width="218" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Doesn't have an account?"/>
                                 <connections>
@@ -102,14 +102,18 @@
             </objects>
             <point key="canvasLocation" x="-2559.1999999999998" y="-546.47676161919048"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Sign Up-->
         <scene sceneID="37w-0j-WkA">
             <objects>
-                <viewController id="jZU-7k-qv4" sceneMemberID="viewController">
+                <viewController id="jZU-7k-qv4" customClass="ViewControllerSignUp" customModule="punto_blanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PIH-5y-74k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siluetaHombre" id="rVg-bn-iHa">
+                                <rect key="frame" x="0.0" y="-10" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieg-Th-0RF">
                                 <rect key="frame" x="56" y="162" width="64" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,19 +141,38 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUr-dj-gXn">
-                                <rect key="frame" x="151" y="348" width="72" height="36"/>
+                                <rect key="frame" x="124" y="366" width="126" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Ingresar"/>
+                                <color key="backgroundColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signupButton:" destination="jZU-7k-qv4" eventType="touchUpInside" id="gGB-cr-9Ks"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2PZ-nD-036"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UCP-mu-P0c" appends="YES" id="7zS-iB-Qs0"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="signupButton" destination="oUr-dj-gXn" id="PYu-ZK-Iay"/>
+                        <outlet property="tfPassword" destination="w8f-2x-jZD" id="GcG-Zr-KCS"/>
+                        <outlet property="tfUsername" destination="uwY-Xe-zFi" id="bZE-oV-17b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBn-uP-9bq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UCP-mu-P0c">
+                    <connections>
+                        <action selector="quitaTeclado" destination="jZU-7k-qv4" id="nqB-lz-Lqw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1751" y="-547"/>
+            <point key="canvasLocation" x="-1751.2" y="-547.37631184407803"/>
         </scene>
         <!--Home-->
         <scene sceneID="G5g-VL-QId">

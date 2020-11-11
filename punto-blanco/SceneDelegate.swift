@@ -56,6 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                           completion: nil)
     }
     
+    //This func is to test login UserDefaults
     func resetDefaults() {
         let defaults = UserDefaults.standard
         let dictionary = defaults.dictionaryRepresentation()
