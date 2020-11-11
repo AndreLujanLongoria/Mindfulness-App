@@ -10,12 +10,18 @@ import UIKit
 class ViewControllerPerfil: UIViewController {
 
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var tfNombre: UITextField!
+    @IBOutlet weak var tfCorreo: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Perfil"
-        logoutButton.layer.cornerRadius = 25
+        logoutButton.layer.cornerRadius = 20
+    }
+    
+    @IBAction func quitaTeclado () {
+        view.endEditing(true)
     }
     
     @IBAction func logoutFromSession(_ sender: UIButton) {
@@ -37,5 +43,6 @@ class ViewControllerPerfil: UIViewController {
             defaults.removeObject(forKey: key)
         }
     }
-
+    
+    
 }

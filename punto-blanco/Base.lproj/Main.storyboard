@@ -96,11 +96,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="BYw-zX-hSy">
                     <connections>
-                        <action selector="quitaTeclado" destination="BYZ-38-t0r" id="CWl-WZ-RyN"/>
+                        <action selector="quitaTeclado" destination="BYZ-38-t0r" id="43h-fO-ZPY"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2559.1999999999998" y="-546.47676161919048"/>
+            <point key="canvasLocation" x="-2569" y="-546"/>
         </scene>
         <!--View Controller Sign Up-->
         <scene sceneID="37w-0j-WkA">

@@ -150,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				CDD9A3F62552551000DFD5CA /* Main.storyboard */,
-				EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */,
 				CDD9A3F02552551000DFD5CA /* AppDelegate.swift */,
 				CDD9A3F22552551000DFD5CA /* SceneDelegate.swift */,
 				ECE422EE2559032B00B55FA0 /* Scripts views */,
@@ -186,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */,
-				EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */,
 				EC0FAE322557D76000366370 /* Usuario.storyboard */,
 				EC0FAE372557D77E00366370 /* Home.storyboard */,
 				EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */,
@@ -229,6 +227,8 @@
 				CD0CA1C025526C7800C959AE /* ViewControllerPerfil.swift */,
 				CDD9A4282552621000DFD5CA /* ViewControllerEstadisticas.swift */,
 				CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */,
+				EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */,
+				EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */,
 			);
 			path = "Scripts views";
 			sourceTree = "<group>";
