@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tfUsername: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        loginButton.layer.cornerRadius = 20
     }
 
     @IBAction func quitaTeclado () {

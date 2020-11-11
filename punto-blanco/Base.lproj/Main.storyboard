@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="siluetaHombre" translatesAutoresizingMaskIntoConstraints="NO" id="66w-Qp-tfI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d99-Se-RPS">
                                 <rect key="frame" x="117" y="193" width="139" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,15 +53,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-z9-O8l">
-                                <rect key="frame" x="150" y="487" width="72" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Ingresar"/>
-                                <connections>
-                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIb-4R-CAa"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="relaxedFace" translatesAutoresizingMaskIntoConstraints="NO" id="xIV-8N-ze2">
                                 <rect key="frame" x="66" y="20" width="240" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,9 +61,21 @@
                                 <rect key="frame" x="73" y="399" width="226" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Doesn't have an account?"/>
                                 <connections>
                                     <segue destination="jZU-7k-qv4" kind="presentation" id="OkN-9Z-C6G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5f-z9-O8l">
+                                <rect key="frame" x="88" y="524" width="201" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Ingresar"/>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIb-4R-CAa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,6 +88,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="x8E-jy-Ru9"/>
                     <connections>
+                        <outlet property="loginButton" destination="t5f-z9-O8l" id="Wwn-lO-ra4"/>
                         <outlet property="tfPassword" destination="XJb-6r-MsL" id="0zw-YL-TK2"/>
                         <outlet property="tfUsername" destination="nro-79-HQT" id="dLz-NG-aDK"/>
                     </connections>
@@ -92,7 +100,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-2559" y="-546"/>
+            <point key="canvasLocation" x="-2559.1999999999998" y="-546.47676161919048"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="37w-0j-WkA">
@@ -236,6 +244,7 @@
     </scenes>
     <resources>
         <image name="relaxedFace" width="170" height="120"/>
+        <image name="siluetaHombre" width="3600" height="5408"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
