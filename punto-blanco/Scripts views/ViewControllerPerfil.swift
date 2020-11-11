@@ -9,10 +9,13 @@ import UIKit
 
 class ViewControllerPerfil: UIViewController {
 
+    @IBOutlet weak var logoutButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Perfil"
+        logoutButton.layer.cornerRadius = 25
     }
     
     @IBAction func logoutFromSession(_ sender: UIButton) {

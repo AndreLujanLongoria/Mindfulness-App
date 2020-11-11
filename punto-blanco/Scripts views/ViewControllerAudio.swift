@@ -11,12 +11,14 @@ import UIKit
 class ViewControllerAudio: UIViewController {
 
     var player: AVAudioPlayer?
+    
+    @IBOutlet weak var EndButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        EndButton.layer.cornerRadius = 25
     }
 
     

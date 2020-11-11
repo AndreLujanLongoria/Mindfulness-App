@@ -72,4 +72,8 @@ extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
         
         return celda
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "addingBpmBefore", sender: self)
+    }
 }

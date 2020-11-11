@@ -34,7 +34,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="nRd-kp-26u" kind="show" id="lsb-Q3-jsu"/>
+                                            <segue destination="nRd-kp-26u" kind="show" identifier="addingBpmBefore" id="wga-i6-n9h"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BPM" translatesAutoresizingMaskIntoConstraints="NO" id="cAo-WI-90e">
-                                <rect key="frame" x="34" y="109" width="307" height="311"/>
+                                <rect key="frame" x="34" y="109" width="307" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwD-jF-taG">
@@ -121,19 +121,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d1-sc-fig" userLabel="AddButton">
-                                <rect key="frame" x="208" y="447" width="100" height="100"/>
+                                <rect key="frame" x="208" y="400" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="up"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCH-gp-Xas" userLabel="RestButton">
-                                <rect key="frame" x="66" y="446" width="100" height="100"/>
+                                <rect key="frame" x="66" y="399" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="down"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-ga-aPz">
-                                <rect key="frame" x="126" y="565" width="122" height="36"/>
+                                <rect key="frame" x="89" y="514" width="197" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.8975246549" green="0.89728885889999999" blue="0.90719121690000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Comencemos"/>
                                 <connections>
                                     <segue destination="OzE-RZ-gVU" kind="show" id="fs3-Nn-dcF"/>
@@ -144,11 +146,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5kq-V0-7pO"/>
+                    <connections>
+                        <outlet property="buttonComenzemos" destination="nbT-ga-aPz" id="aul-bi-yfX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acU-r5-1EY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mH8-3Y-mxZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-879" y="1054"/>
+            <point key="canvasLocation" x="-871.20000000000005" y="1053.8230884557722"/>
         </scene>
         <!--View Controller Audio-->
         <scene sceneID="4lK-2O-R20">
@@ -170,16 +175,6 @@
                                 <rect key="frame" x="295" y="322" width="64" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aK-W0-hVg">
-                                <rect key="frame" x="127" y="584" width="124" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="He terminado"/>
-                                <connections>
-                                    <action selector="heTerminadoButton:" destination="OzE-RZ-gVU" eventType="touchUpInside" id="ibu-ig-hdL"/>
-                                    <segue destination="MiY-fi-pA3" kind="show" id="ujA-Y8-I2p"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NwD-X1-7ee">
                                 <rect key="frame" x="142" y="405" width="91" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -192,18 +187,31 @@
                                 <rect key="frame" x="31" y="76" width="313" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aK-W0-hVg">
+                                <rect key="frame" x="87" y="516" width="200" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="He terminado"/>
+                                <connections>
+                                    <action selector="heTerminadoButton:" destination="OzE-RZ-gVU" eventType="touchUpInside" id="ibu-ig-hdL"/>
+                                    <segue destination="MiY-fi-pA3" kind="show" id="ujA-Y8-I2p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eWb-Tg-cbc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RBw-9c-cYO"/>
                     <connections>
+                        <outlet property="EndButton" destination="5aK-W0-hVg" id="82u-JD-ZHu"/>
                         <outlet property="playButton" destination="NwD-X1-7ee" id="yby-Fo-t1d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fh-9v-eUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="1054"/>
+            <point key="canvasLocation" x="-10.4" y="1053.8230884557722"/>
         </scene>
         <!--View Controller Registro Despues-->
         <scene sceneID="mfW-od-9Fj">
@@ -218,7 +226,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BPM" translatesAutoresizingMaskIntoConstraints="NO" id="VMh-DF-f9R">
-                                <rect key="frame" x="34" y="109" width="307" height="311"/>
+                                <rect key="frame" x="34" y="109" width="307" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1x-Pi-7eG">
@@ -243,19 +251,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhn-vk-Tam">
-                                <rect key="frame" x="208" y="472" width="100" height="100"/>
+                                <rect key="frame" x="208" y="417" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="up"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-mC-q1K">
-                                <rect key="frame" x="66" y="471" width="100" height="100"/>
+                                <rect key="frame" x="66" y="416" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="down"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-dE-YTB">
-                                <rect key="frame" x="149" y="569" width="77" height="36"/>
+                                <rect key="frame" x="87" y="538" width="179" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Terminar"/>
                                 <connections>
                                     <segue destination="1Ob-nZ-maV" kind="unwind" unwindAction="unwindTerminadoWithUnwindSegue:" id="sNT-Lm-eml"/>
@@ -266,11 +276,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gid-RX-dqD"/>
+                    <connections>
+                        <outlet property="endButton" destination="c2d-dE-YTB" id="TAR-0t-m8V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHJ-dL-xxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="1Ob-nZ-maV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="870" y="1054"/>
+            <point key="canvasLocation" x="869.60000000000002" y="1053.8230884557722"/>
         </scene>
         <!--Meditar-->
         <scene sceneID="183-bE-KZq">

@@ -9,10 +9,14 @@ import UIKit
 
 class ViewControllerRegistroDespues: UIViewController {
 
+    
+    @IBOutlet weak var endButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Para terminar"
+        endButton.layer.cornerRadius = 25
         // Do any additional setup after loading the view.
     }
     

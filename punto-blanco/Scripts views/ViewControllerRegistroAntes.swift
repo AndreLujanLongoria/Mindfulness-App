@@ -9,6 +9,8 @@ import UIKit
 
 class ViewControllerRegistroAntes: UIViewController {
 
+    @IBOutlet weak var buttonComenzemos: UIButton!
+    
     /*
     @IBOutlet weak var lbBpm: UILabel!
     var bpm : Int!
@@ -17,6 +19,7 @@ class ViewControllerRegistroAntes: UIViewController {
         super.viewDidLoad()
 
         title = "Antes de comenzar"
+        buttonComenzemos.layer.cornerRadius = 25
         
     }
     /*
