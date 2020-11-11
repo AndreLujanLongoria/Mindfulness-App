@@ -99,13 +99,6 @@
                                 <rect key="frame" x="34" y="109" width="307" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwD-jF-taG">
-                                <rect key="frame" x="80" y="193" width="88" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeO-sJ-ka9">
                                 <rect key="frame" x="176" y="203" width="108" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,11 +117,17 @@
                                 <rect key="frame" x="208" y="400" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="up"/>
+                                <connections>
+                                    <action selector="moreBpm:" destination="nRd-kp-26u" eventType="touchUpInside" id="ju8-yd-9VC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCH-gp-Xas" userLabel="RestButton">
                                 <rect key="frame" x="66" y="399" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="down"/>
+                                <connections>
+                                    <action selector="lessBpm:" destination="nRd-kp-26u" eventType="touchUpInside" id="ubX-ko-la1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-ga-aPz">
                                 <rect key="frame" x="89" y="514" width="197" height="36"/>
@@ -138,9 +137,17 @@
                                 <color key="tintColor" red="0.8975246549" green="0.89728885889999999" blue="0.90719121690000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Comencemos"/>
                                 <connections>
+                                    <action selector="bpmBeforeMeditation:" destination="nRd-kp-26u" eventType="touchUpInside" id="wXb-xS-atF"/>
                                     <segue destination="OzE-RZ-gVU" kind="show" id="fs3-Nn-dcF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwD-jF-taG">
+                                <rect key="frame" x="50" y="193" width="116" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CpB-ey-Ueo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -148,6 +155,7 @@
                     <navigationItem key="navigationItem" id="5kq-V0-7pO"/>
                     <connections>
                         <outlet property="buttonComenzemos" destination="nbT-ga-aPz" id="aul-bi-yfX"/>
+                        <outlet property="lbBpm" destination="GwD-jF-taG" id="Z3f-xP-yKA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acU-r5-1EY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -229,13 +237,6 @@
                                 <rect key="frame" x="34" y="109" width="307" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1x-Pi-7eG">
-                                <rect key="frame" x="80" y="193" width="88" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdG-i8-m5h">
                                 <rect key="frame" x="176" y="203" width="108" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -254,11 +255,17 @@
                                 <rect key="frame" x="208" y="417" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="up"/>
+                                <connections>
+                                    <action selector="moreBpm:" destination="MiY-fi-pA3" eventType="touchUpInside" id="yLZ-ox-1FP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-mC-q1K">
                                 <rect key="frame" x="66" y="416" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="down"/>
+                                <connections>
+                                    <action selector="lessBpm:" destination="MiY-fi-pA3" eventType="touchUpInside" id="idK-bh-COu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-dE-YTB">
                                 <rect key="frame" x="87" y="538" width="179" height="36"/>
@@ -268,9 +275,17 @@
                                 <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Terminar"/>
                                 <connections>
+                                    <action selector="bpmAfterMeditation:" destination="MiY-fi-pA3" eventType="touchUpInside" id="8ag-PK-5cj"/>
                                     <segue destination="a8s-e5-qoX" kind="show" id="msT-rN-4FH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="80" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1x-Pi-7eG">
+                                <rect key="frame" x="56" y="193" width="120" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bzl-Dj-m1y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -278,6 +293,7 @@
                     <navigationItem key="navigationItem" id="Gid-RX-dqD"/>
                     <connections>
                         <outlet property="endButton" destination="c2d-dE-YTB" id="TAR-0t-m8V"/>
+                        <outlet property="lbBpm" destination="J1x-Pi-7eG" id="8JE-I7-i2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHJ-dL-xxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
