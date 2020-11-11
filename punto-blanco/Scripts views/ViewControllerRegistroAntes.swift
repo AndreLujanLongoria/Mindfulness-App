@@ -11,10 +11,9 @@ class ViewControllerRegistroAntes: UIViewController {
 
     @IBOutlet weak var buttonComenzemos: UIButton!
     
-    /*
     @IBOutlet weak var lbBpm: UILabel!
     var bpm : Int!
-    */
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +21,7 @@ class ViewControllerRegistroAntes: UIViewController {
         buttonComenzemos.layer.cornerRadius = 25
         
     }
-    /*
+    
     @IBAction func lessBpm(_ sender: UIButton) {
         bpm = Int(lbBpm.text!)
         bpm -= 1
@@ -34,6 +33,5 @@ class ViewControllerRegistroAntes: UIViewController {
         bpm += 1
         lbBpm.text = String(bpm)
     }
-    */
 
 }

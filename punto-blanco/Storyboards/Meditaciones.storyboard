@@ -12,7 +12,7 @@
         <!--View Controller Meditacion-->
         <scene sceneID="Qcf-85-l9d">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="XI5-i0-qEz" customClass="ViewControllerMeditacion" customModule="punto_blanco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="meditationView" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="XI5-i0-qEz" customClass="ViewControllerMeditacion" customModule="punto_blanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5gu-Ld-aZM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,7 +268,7 @@
                                 <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Terminar"/>
                                 <connections>
-                                    <segue destination="1Ob-nZ-maV" kind="unwind" unwindAction="unwindTerminadoWithUnwindSegue:" id="sNT-Lm-eml"/>
+                                    <segue destination="a8s-e5-qoX" kind="show" id="msT-rN-4FH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -281,9 +281,62 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHJ-dL-xxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="1Ob-nZ-maV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="1053.8230884557722"/>
+        </scene>
+        <!--View Controller Meditation Review-->
+        <scene sceneID="td1-Ke-geD">
+            <objects>
+                <viewController id="a8s-e5-qoX" customClass="ViewControllerMeditationReview" customModule="punto_blanco" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dtH-z4-IdL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PersonaViendoHorizonte" translatesAutoresizingMaskIntoConstraints="NO" id="5iU-CP-Qqg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0c-g0-qZF">
+                                <rect key="frame" x="98" y="508" width="179" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Terminar"/>
+                                <connections>
+                                    <action selector="bpmAfterButton:" destination="a8s-e5-qoX" eventType="touchUpInside" id="FUD-1i-eH3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Como te sientes?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL7-N9-Y1Y">
+                                <rect key="frame" x="34" y="111" width="132" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tomar notas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtb-CH-sWx">
+                                <rect key="frame" x="242" y="111" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dar calificacion?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVW-FE-WFu">
+                                <rect key="frame" x="125" y="241" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AjW-Vg-7aW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vt5-vR-GvJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wK-0u-DxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="1054"/>
         </scene>
         <!--Meditar-->
         <scene sceneID="183-bE-KZq">
@@ -307,6 +360,7 @@
     </scenes>
     <resources>
         <image name="BPM" width="750" height="750"/>
+        <image name="PersonaViendoHorizonte" width="3962" height="2726"/>
         <image name="back" width="512" height="512"/>
         <image name="background-1" width="750" height="1334"/>
         <image name="candle-1" width="512" height="512"/>

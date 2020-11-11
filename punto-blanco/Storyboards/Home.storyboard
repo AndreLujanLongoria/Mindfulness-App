@@ -60,7 +60,7 @@
         <!--View Controller Hola-->
         <scene sceneID="Amf-N3-9l0">
             <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="kZG-91-B98" customClass="ViewControllerHola" customModule="punto_blanco" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="kZG-91-B98" customClass="ViewControllerHola" customModule="punto_blanco" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3tf-dy-KYg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

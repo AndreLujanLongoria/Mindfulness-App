@@ -30,6 +30,7 @@
 		EC0FAE332557D76000366370 /* Usuario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE322557D76000366370 /* Usuario.storyboard */; };
 		EC0FAE382557D77E00366370 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE372557D77E00366370 /* Home.storyboard */; };
 		EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */; };
+		EC6E1224255C743F00358557 /* ViewControllerMeditationReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */; };
 		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
 		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
 		EC97535B2558F7F600E669CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC97535A2558F7F600E669CB /* AVFoundation.framework */; };
@@ -86,6 +87,7 @@
 		EC0FAE322557D76000366370 /* Usuario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Usuario.storyboard; sourceTree = "<group>"; };
 		EC0FAE372557D77E00366370 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
+		EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMeditationReview.swift; sourceTree = "<group>"; };
 		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSecciones.swift; sourceTree = "<group>"; };
 		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
 		EC97535A2558F7F600E669CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0FAE2D2557D72400366370 /* Meditaciones.storyboard */,
+				EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */,
 				EC0FAE322557D76000366370 /* Usuario.storyboard */,
 				EC0FAE372557D77E00366370 /* Home.storyboard */,
 				EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */,
@@ -376,6 +379,7 @@
 				CDD9A3F32552551000DFD5CA /* SceneDelegate.swift in Sources */,
 				CD0CA1D52552714600C959AE /* ViewControllerAudio.swift in Sources */,
 				CD0CA1DA2552715A00C959AE /* ViewControllerRegistroDespues.swift in Sources */,
+				EC6E1224255C743F00358557 /* ViewControllerMeditationReview.swift in Sources */,
 				CD0CA1C125526C7800C959AE /* ViewControllerPerfil.swift in Sources */,
 				AAE27D1B25546073002E5005 /* Reto.swift in Sources */,
 				EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */,

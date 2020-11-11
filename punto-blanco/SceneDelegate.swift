@@ -54,7 +54,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                           options: [.transitionFlipFromLeft],
                           animations: nil,
                           completion: nil)
-
     }
     
     func resetDefaults() {
