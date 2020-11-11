@@ -32,6 +32,8 @@
 		EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */; };
 		EC34D280255C93CD00A73810 /* ViewControllerSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */; };
 		EC34D28B255CA2BD00A73810 /* ViewControllerAceptarEvento.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34D28A255CA2BD00A73810 /* ViewControllerAceptarEvento.swift */; };
+		EC34D294255CA83F00A73810 /* TableViewCellGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34D292255CA83F00A73810 /* TableViewCellGeneral.swift */; };
+		EC34D295255CA83F00A73810 /* TableViewCellGeneral.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC34D293255CA83F00A73810 /* TableViewCellGeneral.xib */; };
 		EC6E1224255C743F00358557 /* ViewControllerMeditationReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */; };
 		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
 		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
@@ -91,6 +93,8 @@
 		EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Estadisticas.storyboard; sourceTree = "<group>"; };
 		EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSignUp.swift; sourceTree = "<group>"; };
 		EC34D28A255CA2BD00A73810 /* ViewControllerAceptarEvento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAceptarEvento.swift; sourceTree = "<group>"; };
+		EC34D292255CA83F00A73810 /* TableViewCellGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGeneral.swift; sourceTree = "<group>"; };
+		EC34D293255CA83F00A73810 /* TableViewCellGeneral.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellGeneral.xib; sourceTree = "<group>"; };
 		EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMeditationReview.swift; sourceTree = "<group>"; };
 		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSecciones.swift; sourceTree = "<group>"; };
 		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				ECC10D7D2558643300CA9FA3 /* Historial.storyboard */,
 				EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */,
 				ECE422E52559031000B55FA0 /* TableViewCellMeditaciones.xib */,
+				EC34D293255CA83F00A73810 /* TableViewCellGeneral.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				CDD9A42325525AE500DFD5CA /* ViewControllerHola.swift */,
 				EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */,
 				EC34D28A255CA2BD00A73810 /* ViewControllerAceptarEvento.swift */,
+				EC34D292255CA83F00A73810 /* TableViewCellGeneral.swift */,
 				EC34D27F255C93CD00A73810 /* ViewControllerSignUp.swift */,
 			);
 			path = "Scripts views";
@@ -345,6 +351,7 @@
 				EC0FAE332557D76000366370 /* Usuario.storyboard in Resources */,
 				CDD9A3FA2552551100DFD5CA /* Assets.xcassets in Resources */,
 				CDD9A3F82552551000DFD5CA /* Main.storyboard in Resources */,
+				EC34D295255CA83F00A73810 /* TableViewCellGeneral.xib in Resources */,
 				EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */,
 				ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */,
 				EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */,
@@ -387,6 +394,7 @@
 				CD0CA1D52552714600C959AE /* ViewControllerAudio.swift in Sources */,
 				CD0CA1DA2552715A00C959AE /* ViewControllerRegistroDespues.swift in Sources */,
 				EC6E1224255C743F00358557 /* ViewControllerMeditationReview.swift in Sources */,
+				EC34D294255CA83F00A73810 /* TableViewCellGeneral.swift in Sources */,
 				CD0CA1C125526C7800C959AE /* ViewControllerPerfil.swift in Sources */,
 				AAE27D1B25546073002E5005 /* Reto.swift in Sources */,
 				EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */,

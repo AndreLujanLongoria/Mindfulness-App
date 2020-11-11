@@ -30,4 +30,8 @@ class TableViewCellMeditaciones: UITableViewCell {
         return UINib(nibName: "TableViewCellMeditaciones", bundle: nil)
     }
     
+    public func configure(with image: UIImage){
+        imgCustom.image = image
+    }
+    
 }

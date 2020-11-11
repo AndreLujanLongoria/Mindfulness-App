@@ -22,35 +22,12 @@ class ViewControllerHola: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
 
         title = "Hola"
-        
         imgPuntoBlanco.layer.cornerRadius = 30
+        
         self.tvRetos.delegate = self
         self.tvRetos.dataSource = self
-    }
-    
-
-    @IBAction func unwindEstad (unwindSegue: UIStoryboardSegue){
         
-    }
-    
-    @IBAction func unwindEventos (unwindSegue: UIStoryboardSegue){
-        
-    }
-    
-    @IBAction func unwindMeditaciones (unwindSegue: UIStoryboardSegue){
-        
-    }
-    
-    @IBAction func unwindHistorial (unwindSegue: UIStoryboardSegue){
-        
-    }
-    
-    @IBAction func unwindPerfil (unwindSegue: UIStoryboardSegue){
-        
-    }
-    
-    @IBAction func unwindTerminado (unwindSegue: UIStoryboardSegue){
-        
+        tvRetos.register(TableViewCellGeneral.nib(), forCellReuseIdentifier: TableViewCellGeneral.identifier)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,21 +35,12 @@ class ViewControllerHola: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let celdaReto = tvRetos.dequeueReusableCell(withIdentifier: "celdaReto")!
+        let celdaReto = tvRetos.dequeueReusableCell(withIdentifier: TableViewCellGeneral.identifier) as! TableViewCellGeneral
         
-        celdaReto.textLabel?.text = listaRetos[indexPath.row].NombreReto
+        celdaReto.configure(with: listaRetos[indexPath.row].NombreReto)
         
         return celdaReto
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
