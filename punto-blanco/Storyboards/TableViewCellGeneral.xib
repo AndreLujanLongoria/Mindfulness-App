@@ -17,12 +17,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-9r-bWi">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-9r-bWi">
+                        <rect key="frame" x="16" y="13" width="288" height="77"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mu6-4y-gs8">
-                                <rect key="frame" x="35" y="35" width="62" height="32"/>
+                                <rect key="frame" x="17" y="21" width="263" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -32,8 +31,16 @@
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2qb-9r-bWi" secondAttribute="trailing" constant="16" id="BRI-XT-wUL"/>
+                    <constraint firstAttribute="bottom" secondItem="2qb-9r-bWi" secondAttribute="bottom" constant="13" id="lvK-rO-kbb"/>
+                    <constraint firstItem="2qb-9r-bWi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tLu-vL-SOB"/>
+                    <constraint firstItem="2qb-9r-bWi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="v9X-Lr-Int"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="lbTitle" destination="Mu6-4y-gs8" id="pOE-6p-ccL"/>
                 <outlet property="view" destination="2qb-9r-bWi" id="eUJ-9Z-QRt"/>

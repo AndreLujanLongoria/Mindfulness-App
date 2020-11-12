@@ -17,7 +17,7 @@ class CollectionViewCellSecciones: UICollectionViewCell {
         super.awakeFromNib()
         buttonSection.clipsToBounds = true
         buttonSection.layer.masksToBounds = true
-        buttonSection.layer.cornerRadius = 20
+        buttonSection.layer.cornerRadius = 10
     }
     
     /*

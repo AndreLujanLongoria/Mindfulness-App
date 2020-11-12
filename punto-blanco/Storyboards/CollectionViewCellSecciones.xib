@@ -10,14 +10,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCellSecciones" id="gTV-IL-0wX" customClass="CollectionViewCellSecciones" customModule="punto_blanco" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="105" height="44"/>
+            <rect key="frame" x="0.0" y="0.0" width="363" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="105" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="363" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUu-mB-xMs">
-                        <rect key="frame" x="19.5" y="2" width="66" height="40"/>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUu-mB-xMs">
+                        <rect key="frame" x="35" y="19" width="293" height="112"/>
                         <color key="backgroundColor" red="0.1512196958" green="0.1360539794" blue="0.2542820871" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                         <color key="tintColor" red="0.8975246549" green="0.89728885889999999" blue="0.90719121690000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -28,14 +28,16 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="hUu-mB-xMs" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ek7-gg-A26"/>
-                <constraint firstItem="hUu-mB-xMs" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="i8w-UU-Hvy"/>
+                <constraint firstItem="hUu-mB-xMs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="19" id="9f8-0N-1aK"/>
+                <constraint firstItem="hUu-mB-xMs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="35" id="qbC-XN-5Iv"/>
+                <constraint firstAttribute="bottom" secondItem="hUu-mB-xMs" secondAttribute="bottom" constant="19" id="qg8-MW-5rt"/>
+                <constraint firstAttribute="trailing" secondItem="hUu-mB-xMs" secondAttribute="trailing" constant="35" id="zzk-vQ-07i"/>
             </constraints>
-            <size key="customSize" width="105" height="44"/>
+            <size key="customSize" width="363" height="150"/>
             <connections>
                 <outlet property="buttonSection" destination="hUu-mB-xMs" id="YG7-H4-Xj3"/>
             </connections>
-            <point key="canvasLocation" x="63.200000000000003" y="136.73163418290855"/>
+            <point key="canvasLocation" x="269.60000000000002" y="184.40779610194903"/>
         </collectionViewCell>
     </objects>
 </document>
