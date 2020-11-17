@@ -17,6 +17,7 @@ class ViewControllerMeditacion: UIViewController {
         Meditaciones(Nombre: "Luz", foto: UIImage(named: "luz"))
     ]
     
+    
     /*
      ---Nombre de variables----
      tvMedit = table view meditaciones

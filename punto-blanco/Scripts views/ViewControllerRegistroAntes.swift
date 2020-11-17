@@ -13,6 +13,7 @@ class ViewControllerRegistroAntes: UIViewController {
     @IBOutlet weak var lbBpm: UILabel!
     let defaults = UserDefaults.standard
     var bpm : Int!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,4 +38,6 @@ class ViewControllerRegistroAntes: UIViewController {
     @IBAction func bpmBeforeMeditation(_ sender: UIButton) {
         defaults.setValue(bpm, forKey: "bpmBeforeMeditation")
     }
+    
+    
 }

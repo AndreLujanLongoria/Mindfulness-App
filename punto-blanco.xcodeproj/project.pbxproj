@@ -17,6 +17,7 @@
 		CD0CA1D02552713000C959AE /* ViewControllerRegistroAntes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA1CF2552713000C959AE /* ViewControllerRegistroAntes.swift */; };
 		CD0CA1D52552714600C959AE /* ViewControllerAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA1D42552714600C959AE /* ViewControllerAudio.swift */; };
 		CD0CA1DA2552715A00C959AE /* ViewControllerRegistroDespues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA1D92552715A00C959AE /* ViewControllerRegistroDespues.swift */; };
+		CD45F66B2563FFB00028B050 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45F66A2563FFB00028B050 /* Usuario.swift */; };
 		CDD9A3F12552551000DFD5CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A3F02552551000DFD5CA /* AppDelegate.swift */; };
 		CDD9A3F32552551000DFD5CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A3F22552551000DFD5CA /* SceneDelegate.swift */; };
 		CDD9A3F52552551000DFD5CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD9A3F42552551000DFD5CA /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		CD0CA1CF2552713000C959AE /* ViewControllerRegistroAntes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistroAntes.swift; sourceTree = "<group>"; };
 		CD0CA1D42552714600C959AE /* ViewControllerAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAudio.swift; sourceTree = "<group>"; };
 		CD0CA1D92552715A00C959AE /* ViewControllerRegistroDespues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRegistroDespues.swift; sourceTree = "<group>"; };
+		CD45F66A2563FFB00028B050 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		CDD9A3ED2552551000DFD5CA /* punto-blanco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "punto-blanco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD9A3F02552551000DFD5CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDD9A3F22552551000DFD5CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				AAE27D1A25546073002E5005 /* Reto.swift */,
 				AAE27D1525545C67002E5005 /* Evento.swift */,
+				CD45F66A2563FFB00028B050 /* Usuario.swift */,
 				AAEA5757255383E4006222B9 /* Meditaciones.swift */,
 				CDD9A3F42552551000DFD5CA /* ViewController.swift */,
 				CD0CA1CF2552713000C959AE /* ViewControllerRegistroAntes.swift */,
@@ -390,6 +393,7 @@
 				CD0CA1CB255270F800C959AE /* ViewControllerEventos.swift in Sources */,
 				EC34D28B255CA2BD00A73810 /* ViewControllerAceptarEvento.swift in Sources */,
 				CD0CA1C625526D6900C959AE /* ViewControllerMeditacion.swift in Sources */,
+				CD45F66B2563FFB00028B050 /* Usuario.swift in Sources */,
 				CDD9A3F32552551000DFD5CA /* SceneDelegate.swift in Sources */,
 				CD0CA1D52552714600C959AE /* ViewControllerAudio.swift in Sources */,
 				CD0CA1DA2552715A00C959AE /* ViewControllerRegistroDespues.swift in Sources */,

@@ -14,12 +14,14 @@ class ViewControllerRegistroDespues: UIViewController {
     @IBOutlet weak var lbBpm: UILabel!
     let defaults = UserDefaults.standard
     var bpm : Int!
+    var registro = [Usuario]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Para terminar"
         endButton.layer.cornerRadius = 25
+        obtenerRegistro()
         // Do any additional setup after loading the view.
     }
     
@@ -35,8 +37,50 @@ class ViewControllerRegistroDespues: UIViewController {
         lbBpm.text = String(bpm)
     }
     
+    // Persistencia Codable
+    func dataFileURL () -> URL {
+        let url = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+        let pathArchivo = url.appendingPathComponent("registro.plist")
+        
+        return pathArchivo
+    }
+    
+    @IBAction func guardarRegistro() {
+        do {
+            let data = try PropertyListEncoder().encode(registro)
+            try data.write(to: dataFileURL())
+        }
+        catch {
+            print("Error al guaradr el registro")
+        }
+    }
+    
+    func obtenerRegistro() {
+        registro.removeAll()
+        do {
+            let data = try Data.init(contentsOf: dataFileURL())
+            registro = try PropertyListDecoder().decode([Usuario].self, from: data)
+        } catch {
+            print("Error al cargar los datos del archivo")
+        }
+    }
+    
     //Adding UserDefaults
     @IBAction func bpmAfterMeditation(_ sender: UIButton) {
         defaults.set(bpm, forKey: "bpmAfterMeditation")
+        
+        let ant = defaults.integer(forKey: "bpmBeforeMeditation")
+        let desp = defaults.integer(forKey: "bpmAfterMeditation")
+        
+        let aux = Usuario(pulsoAnt: ant, pulsoDesp: desp)
+        registro.append(aux)
+        if registro.count == 7 {
+            registro.remove(at: 0)
+        }
+        guardarRegistro()
+        
     }
+    
+
+    
 }
