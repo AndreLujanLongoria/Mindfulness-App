@@ -65,7 +65,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" red="0.28097376229999999" green="0.62363237140000005" blue="0.66516572240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Doesn't have an account?"/>
+                                <state key="normal" title="Don't have an account?"/>
                                 <connections>
                                     <segue destination="jZU-7k-qv4" kind="presentation" id="OkN-9Z-C6G"/>
                                 </connections>
