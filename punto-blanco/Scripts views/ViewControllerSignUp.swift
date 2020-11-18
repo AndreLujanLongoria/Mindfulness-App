@@ -17,10 +17,39 @@ class ViewControllerSignUp: UIViewController {
         super.viewDidLoad()
         title = "Sign up"
         signupButton.layer.cornerRadius = 25
+        
+        //Listen for keyboard events
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notificacion:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notificacion:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notificacion:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     
     @IBAction func quitaTeclado () {
         view.endEditing(true)
+    }
+    
+    @objc func keyboardWillChange(notificacion:Notification){
+        
+        
+        guard let keyboardRect = (notificacion.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else{
+            return
+        }
+        
+        if notificacion.name == UIResponder.keyboardWillShowNotification ||
+            notificacion.name == UIResponder.keyboardWillChangeFrameNotification{
+            
+            view.frame.origin.y = -keyboardRect.height/2
+        }
+        else
+        {
+            view.frame.origin.y = 0
+        }
     }
 
     @IBAction func signupButton(_ sender: UIButton) {
