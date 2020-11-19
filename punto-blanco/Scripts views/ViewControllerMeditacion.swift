@@ -59,7 +59,17 @@ extension ViewControllerMeditacion : UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 120, height: 120)
     }
+     
+     
      */
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 }
 
 extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
@@ -78,3 +88,5 @@ extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
         performSegue(withIdentifier: "addingBpmBefore", sender: self)
     }
 }
+
+

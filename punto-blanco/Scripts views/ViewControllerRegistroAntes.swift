@@ -39,5 +39,12 @@ class ViewControllerRegistroAntes: UIViewController {
         defaults.setValue(bpm, forKey: "bpmBeforeMeditation")
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     
 }

@@ -21,4 +21,12 @@ class ViewControllerAceptarEvento: UIViewController {
     @IBAction func asistireButton(_ sender: UIButton) {
         self.navigationController?.popToRootViewController(animated: true)
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
 }

@@ -38,6 +38,14 @@ class ViewControllerEventos: UIViewController, UITableViewDelegate, UITableViewD
         return celdaEventos
     }
 
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     /*
     // MARK: - Navigation
 

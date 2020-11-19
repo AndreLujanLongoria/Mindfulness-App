@@ -114,7 +114,13 @@ class ViewControllerEstadisticas: UIViewController {
         progSeis.setProgress(aux, animated: true)
         aux = Float(compSiete.fractionCompleted)
         ProgSiete.setProgress(aux, animated: true)
-        
-
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
     }
 }
