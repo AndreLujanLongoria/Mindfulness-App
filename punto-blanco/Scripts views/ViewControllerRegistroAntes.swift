@@ -23,6 +23,10 @@ class ViewControllerRegistroAntes: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        bpm = 80
+    }
+    
     @IBAction func lessBpm(_ sender: UIButton) {
         bpm = Int(lbBpm.text!)
         bpm -= 1

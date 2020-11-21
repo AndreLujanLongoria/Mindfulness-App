@@ -21,8 +21,13 @@ class ViewControllerRegistroDespues: UIViewController {
 
         title = "Para terminar"
         endButton.layer.cornerRadius = 25
-        obtenerRegistro()
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        bpm = 80
+        obtenerRegistro()
     }
     
     @IBAction func lessBpm(_ sender: UIButton) {
@@ -51,7 +56,7 @@ class ViewControllerRegistroDespues: UIViewController {
             try data.write(to: dataFileURL())
         }
         catch {
-            print("Error al guaradr el registro")
+            print("Error al guardar el registro")
         }
     }
     
@@ -61,7 +66,7 @@ class ViewControllerRegistroDespues: UIViewController {
             let data = try Data.init(contentsOf: dataFileURL())
             registro = try PropertyListDecoder().decode([Usuario].self, from: data)
         } catch {
-            print("Error al cargar los datos del archivo")
+            print("Error al cargar los datos")
         }
     }
     
@@ -74,7 +79,8 @@ class ViewControllerRegistroDespues: UIViewController {
         
         let aux = Usuario(pulsoAnt: ant, pulsoDesp: desp)
         registro.append(aux)
-        if registro.count == 7 {
+        
+        if registro.count == 8 {
             registro.remove(at: 0)
         }
         guardarRegistro()
