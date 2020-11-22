@@ -25,6 +25,16 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iGQ-Oc-akA" secondAttribute="height" multiplier="307:195" id="vsa-ST-Wdl"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="minicelda" id="cCQ-uD-DRl">
+                                        <rect key="frame" x="0.0" y="28" width="307" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cCQ-uD-DRl" id="f6x-gf-lGn">
+                                            <rect key="frame" x="0.0" y="0.0" width="307" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sjg-1g-t1d">
                                 <rect key="frame" x="34" y="396" width="307" height="76"/>
@@ -90,6 +100,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c3h-9o-hX5"/>
+                    <connections>
+                        <outlet property="tablaMedit" destination="iGQ-Oc-akA" id="f94-6Z-OhP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="in1-0H-Ec9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
