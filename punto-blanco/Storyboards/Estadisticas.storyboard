@@ -16,102 +16,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="74h-sl-v9n">
-                                <rect key="frame" x="-180" y="0.0" width="750" height="761"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BPM" translatesAutoresizingMaskIntoConstraints="NO" id="sci-SO-aUB">
-                                <rect key="frame" x="34" y="198" width="322" height="361"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="sci-SO-aUB" secondAttribute="height" multiplier="307:311" id="BPs-1q-ZN6"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ritmo cardiaco promedio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-99-IbL">
-                                <rect key="frame" x="53" y="316" width="211" height="21"/>
+                                <rect key="frame" x="97" y="205.66666666666666" width="196" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio Semanal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0L-4eB">
-                                <rect key="frame" x="121.66666666666669" y="266" width="147" height="21"/>
+                                <rect key="frame" x="122.00000000000001" y="412" width="146.33333333333337" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-a4-ieJ">
-                                <rect key="frame" x="181" y="375" width="108" height="67"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-a4-ieJ">
+                                <rect key="frame" x="185" y="296" width="107.66666666666669" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-mJ-y6Z">
-                                <rect key="frame" x="106.5" y="375" width="34.5" height="67"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-zd-81L">
-                                <rect key="frame" x="34" y="514" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="99n-K7-Wj1">
-                                <rect key="frame" x="34" y="534" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="moO-Gv-d25">
-                                <rect key="frame" x="34" y="554" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HhT-gP-3Pt">
-                                <rect key="frame" x="34" y="574" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tus pulsos pasados:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldy-8O-Pl4">
-                                <rect key="frame" x="34" y="485" width="173" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0uw-SS-MFM">
+                                <rect key="frame" x="42" y="565" width="307" height="124"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5aZ-zd-81L">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="99n-K7-Wj1">
+                                        <rect key="frame" x="0.0" y="20" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="moO-Gv-d25">
+                                        <rect key="frame" x="0.0" y="40" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HhT-gP-3Pt">
+                                        <rect key="frame" x="0.0" y="60" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UKX-7B-POO">
+                                        <rect key="frame" x="0.0" y="80" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="atd-uq-nhL">
+                                        <rect key="frame" x="0.0" y="100" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-Cw-chP">
+                                        <rect key="frame" x="0.0" y="120" width="307" height="4"/>
+                                        <color key="progressTintColor" red="0.34609180690000002" green="0.75790864229999999" blue="0.63779789210000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="trackTintColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="KkC-Km-OiQ"/>
+                                    <constraint firstAttribute="height" constant="124" id="Zip-3t-ACc"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tus pulsos pasados:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldy-8O-Pl4">
+                                <rect key="frame" x="109" y="498" width="173" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKX-7B-POO">
-                                <rect key="frame" x="34" y="594" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atd-uq-nhL">
-                                <rect key="frame" x="34" y="614" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-Cw-chP">
-                                <rect key="frame" x="34" y="634" width="307" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-mJ-y6Z">
+                                <rect key="frame" x="88" y="302" width="29.666666666666657" height="57.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n9N-na-gcG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="sci-SO-aUB" firstAttribute="top" secondItem="n9N-na-gcG" secondAttribute="top" constant="58" id="08B-DP-r68"/>
-                            <constraint firstItem="PS9-99-IbL" firstAttribute="top" secondItem="UPA-0L-4eB" secondAttribute="bottom" constant="29" id="1Fl-Hm-Twt"/>
-                            <constraint firstItem="PS9-99-IbL" firstAttribute="top" secondItem="UPA-0L-4eB" secondAttribute="bottom" constant="29" id="3BY-Qh-gCF"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="bottom" secondItem="Upe-mJ-y6Z" secondAttribute="bottom" constant="319" id="40E-rb-kLn"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="40" id="5PW-M8-UaH"/>
-                            <constraint firstItem="Upe-mJ-y6Z" firstAttribute="top" secondItem="PS9-99-IbL" secondAttribute="bottom" constant="38" id="90E-fE-5iS"/>
-                            <constraint firstItem="74h-sl-v9n" firstAttribute="bottom" secondItem="n9N-na-gcG" secondAttribute="bottom" id="B49-iD-Z6n"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="top" secondItem="PS9-99-IbL" secondAttribute="bottom" constant="38" id="Fp4-zT-Om9"/>
-                            <constraint firstItem="Upe-mJ-y6Z" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="106.5" id="Gxi-hX-uxX"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="bottom" secondItem="sci-SO-aUB" secondAttribute="bottom" constant="202" id="ITp-uZ-axr"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="40" id="JBx-jb-icP"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="sci-SO-aUB" secondAttribute="trailing" constant="34" id="MTf-kg-6XG"/>
-                            <constraint firstItem="UPA-0L-4eB" firstAttribute="centerX" secondItem="94j-Hm-tBp" secondAttribute="centerX" id="O23-Hh-Bqk"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PBj-a4-ieJ" secondAttribute="trailing" constant="86" id="SaW-A8-mTm"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="top" secondItem="PS9-99-IbL" secondAttribute="bottom" constant="38" id="WOF-5R-hO7"/>
-                            <constraint firstItem="sci-SO-aUB" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="34" id="YIZ-tf-7MS"/>
-                            <constraint firstItem="74h-sl-v9n" firstAttribute="centerX" secondItem="94j-Hm-tBp" secondAttribute="centerX" id="efE-Ic-c9X"/>
-                            <constraint firstItem="74h-sl-v9n" firstAttribute="centerY" secondItem="94j-Hm-tBp" secondAttribute="centerY" id="fYw-hd-Nqk"/>
-                            <constraint firstItem="74h-sl-v9n" firstAttribute="top" secondItem="94j-Hm-tBp" secondAttribute="top" id="g2I-bz-vik"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PS9-99-IbL" secondAttribute="trailing" constant="126" id="gne-Ka-2ao"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="bottom" secondItem="PBj-a4-ieJ" secondAttribute="bottom" constant="319" id="mih-le-2Yz"/>
-                            <constraint firstItem="PS9-99-IbL" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="53" id="wbD-R7-g4X"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="UPA-0L-4eB" secondAttribute="trailing" constant="121.67" id="01F-Cv-m2j"/>
+                            <constraint firstItem="PS9-99-IbL" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="97" id="1Tg-mt-arq"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="PBj-a4-ieJ" secondAttribute="bottom" constant="49" id="3DZ-Wr-SiO"/>
+                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="67.333333333333343" id="5xk-9Q-e6L"/>
+                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="67.333333333333343" id="9cN-aS-RVO"/>
+                            <constraint firstItem="0uw-SS-MFM" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="42" id="9jH-fh-eCu"/>
+                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="top" secondItem="PS9-99-IbL" secondAttribute="bottom" constant="70" id="AxE-fk-Xfk"/>
+                            <constraint firstItem="Upe-mJ-y6Z" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="88" id="Ejo-1M-06I"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="ldy-8O-Pl4" secondAttribute="trailing" constant="108" id="Fg4-MP-5sA"/>
+                            <constraint firstItem="ldy-8O-Pl4" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="109" id="GYL-cC-MTV"/>
+                            <constraint firstItem="ldy-8O-Pl4" firstAttribute="top" secondItem="UPA-0L-4eB" secondAttribute="bottom" constant="65.670000000000002" id="HbL-cZ-EUl"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PS9-99-IbL" secondAttribute="trailing" constant="97" id="IdG-WX-YRy"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="0uw-SS-MFM" secondAttribute="trailing" constant="41" id="MQZ-sP-dPF"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PBj-a4-ieJ" secondAttribute="trailing" constant="97.333333333333371" id="SSI-Ld-IkH"/>
+                            <constraint firstItem="0uw-SS-MFM" firstAttribute="top" secondItem="ldy-8O-Pl4" secondAttribute="bottom" constant="43" id="Z2u-xy-tfL"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="Upe-mJ-y6Z" secondAttribute="bottom" constant="52.666666666666686" id="cdU-Q9-2Yp"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="bottom" secondItem="0uw-SS-MFM" secondAttribute="bottom" constant="72" id="fv1-Gx-ERE"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="122" id="qEJ-Y3-bQN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w05-4D-GTr"/>
@@ -128,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Rs-49-i69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2540" y="1039.4302848575712"/>
+            <point key="canvasLocation" x="-2540" y="1039.3364928909953"/>
         </scene>
         <!--Estadisticas-->
         <scene sceneID="obF-Ey-baM">
@@ -152,9 +154,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BPM" width="750" height="750"/>
         <image name="StadisticsIcon" width="32" height="32"/>
-        <image name="background-1" width="750" height="1334"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

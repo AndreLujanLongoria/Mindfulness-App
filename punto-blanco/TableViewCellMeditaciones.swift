@@ -11,13 +11,16 @@ class TableViewCellMeditaciones: UITableViewCell {
 
     static let identifier = "customCell"
     
+    
+    @IBOutlet weak var viewButton: UIView!
+    
     @IBOutlet weak var imgCustom: UIImageView!
     @IBOutlet weak var customCell: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        customCell.clipsToBounds = true
-        customCell.layer.cornerRadius = 30
+        viewButton.clipsToBounds = true
+        viewButton.layer.cornerRadius = 30
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -4,47 +4,68 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="120" id="KGk-i7-Jjw" customClass="TableViewCellMeditaciones" customModule="punto_blanco" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="329" height="159"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="100" id="KGk-i7-Jjw" customClass="TableViewCellMeditaciones" customModule="punto_blanco" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="159"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="329" height="159"/>
+                <rect key="frame" x="0.0" y="0.0" width="475" height="159"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="olg-V3-ndU">
-                        <rect key="frame" x="16" y="15" width="297" height="129"/>
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                    </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play-btn" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-G1-G9F">
-                        <rect key="frame" x="34" y="33" width="44" height="36"/>
-                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-2u-okJ">
+                        <rect key="frame" x="0.0" y="22" width="475" height="137"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="v4h-G1-G9F">
+                                <rect key="frame" x="16" y="9.5" width="69" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.54893583059999995" blue="0.57591593269999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-uM-aC0">
+                                <rect key="frame" x="119" y="13" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duracion =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3M-ty-oJv">
+                                <rect key="frame" x="119" y="46" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4Wu-2u-okJ" secondAttribute="height" multiplier="475:137" id="Oq0-PH-QO6"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="olg-V3-ndU" secondAttribute="bottom" constant="4" id="AGN-oM-sti"/>
-                    <constraint firstItem="v4h-G1-G9F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="MeY-Hw-rdH"/>
-                    <constraint firstItem="olg-V3-ndU" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="YDw-RD-1RC"/>
-                    <constraint firstItem="olg-V3-ndU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="aLW-9x-8ch"/>
-                    <constraint firstItem="olg-V3-ndU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="caV-u2-ytE"/>
-                    <constraint firstItem="v4h-G1-G9F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="18" id="gQB-4b-xpg"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="v4h-G1-G9F" secondAttribute="bottom" constant="79" id="v1J-BK-iaG"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="v4h-G1-G9F" secondAttribute="trailing" constant="235" id="v5T-05-ty6"/>
+                    <constraint firstAttribute="bottom" secondItem="4Wu-2u-okJ" secondAttribute="bottom" id="7Di-2d-xJ5"/>
+                    <constraint firstItem="4Wu-2u-okJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="B6p-Lc-kbZ"/>
+                    <constraint firstAttribute="trailing" secondItem="4Wu-2u-okJ" secondAttribute="trailing" id="QQe-tY-mEB"/>
+                    <constraint firstItem="4Wu-2u-okJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fLk-Ee-HbB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="customCell" destination="H2p-sc-9uM" id="dNo-Mn-z8U"/>
-                <outlet property="imgCustom" destination="olg-V3-ndU" id="d4a-D5-S1c"/>
+                <outlet property="imgCustom" destination="v4h-G1-G9F" id="sa5-Ue-B4C"/>
+                <outlet property="viewButton" destination="4Wu-2u-okJ" id="bdR-8H-G93"/>
             </connections>
-            <point key="canvasLocation" x="146.40000000000001" y="206.44677661169416"/>
+            <point key="canvasLocation" x="-333.60000000000002" y="239.73013493253376"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="play-btn" width="256" height="256"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

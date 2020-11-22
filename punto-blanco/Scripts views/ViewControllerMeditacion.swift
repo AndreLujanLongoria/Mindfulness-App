@@ -45,14 +45,16 @@ extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tabliew: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tvMedit.dequeueReusableCell(withIdentifier: "customCell") as! TableViewCellMeditaciones
-        celda.imgCustom.image = UIImage(named: "MujerNadando")
+        //celda.imgCustom.image = UIImage(named: "")
         
         return celda
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "addingBpmBefore", sender: self)
+        self.tvMedit.deselectRow(at: indexPath, animated: false)
     }
+    
 }
 
 
