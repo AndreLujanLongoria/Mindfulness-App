@@ -137,16 +137,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="sat-hp-reB">
-                                <rect key="frame" x="-187.5" y="0.0" width="750" height="667"/>
+                                <rect key="frame" x="-187.5" y="0.0" width="750" height="618"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puntoBlanco" translatesAutoresizingMaskIntoConstraints="NO" id="jI3-1N-NdP">
-                                <rect key="frame" x="-687.5" y="200" width="1750" height="128"/>
+                                <rect key="frame" x="-687.5" y="200" width="1463" height="107"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jI3-1N-NdP" secondAttribute="height" multiplier="875:64" id="owO-lv-HYa"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retos de Hoy:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avD-lI-bhB">
-                                <rect key="frame" x="33" y="364" width="138" height="28"/>
+                                <rect key="frame" x="33" y="343" width="138" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -154,14 +154,14 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lE-VW-QUN">
-                                <rect key="frame" x="16" y="150" width="84" height="104"/>
+                                <rect key="frame" x="16" y="150" width="84" height="83"/>
                                 <state key="normal" title="Button" image="calendario"/>
                                 <connections>
                                     <segue destination="cIy-S2-t9h" kind="presentation" id="1OE-kD-vMk"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3tn-oD-UfN">
-                                <rect key="frame" x="33" y="410" width="309" height="209"/>
+                                <rect key="frame" x="33" y="361" width="309" height="209"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3tn-oD-UfN" secondAttribute="height" multiplier="309:209" id="KHa-o1-0uy"/>
@@ -221,12 +221,13 @@
             </objects>
             <point key="canvasLocation" x="-3404" y="1052.9235382308846"/>
         </scene>
-        <!--Home-->
+        <!--Inicio-->
         <scene sceneID="rxl-xW-TYA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yX9-Gl-v2i" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" selectedImage="house.fill" id="OuP-uR-azt"/>
+                    <tabBarItem key="tabBarItem" title="Inicio" image="HomeIcon" id="veH-8y-Gwh"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="U2d-Ys-sgF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -262,10 +263,10 @@
     </scenes>
     <resources>
         <image name="EventoEjemplo" width="512" height="342"/>
+        <image name="HomeIcon" width="32" height="32"/>
         <image name="background-1" width="750" height="1334"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="calendario" width="512" height="512"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="puntoBlanco" width="1750" height="1750"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

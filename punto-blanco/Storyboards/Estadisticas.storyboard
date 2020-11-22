@@ -17,34 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="74h-sl-v9n">
-                                <rect key="frame" x="-187.5" y="0.0" width="750" height="667"/>
+                                <rect key="frame" x="-187.5" y="0.0" width="750" height="618"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BPM" translatesAutoresizingMaskIntoConstraints="NO" id="sci-SO-aUB">
-                                <rect key="frame" x="34" y="154" width="307" height="311"/>
+                                <rect key="frame" x="34" y="154" width="307" height="262"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sci-SO-aUB" secondAttribute="height" multiplier="307:311" id="BPs-1q-ZN6"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ritmo cardiaco promedio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-99-IbL">
-                                <rect key="frame" x="53" y="222" width="196" height="21"/>
+                                <rect key="frame" x="53" y="173" width="196" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio Semanal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0L-4eB">
-                                <rect key="frame" x="114" y="172" width="147" height="21"/>
+                                <rect key="frame" x="114" y="123" width="147" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-a4-ieJ">
-                                <rect key="frame" x="181" y="281" width="108" height="67"/>
+                                <rect key="frame" x="181" y="232" width="108" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-mJ-y6Z">
-                                <rect key="frame" x="106.5" y="281" width="34.5" height="67"/>
+                                <rect key="frame" x="106.5" y="232" width="34.5" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -134,8 +134,9 @@
         <scene sceneID="obF-Ey-baM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G3e-LQ-lDV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Estadisticas" image="heart.circle.fill" catalog="system" id="oi2-sk-BiE"/>
+                    <tabBarItem key="tabBarItem" title="Estadisticas" image="StadisticsIcon" id="ozO-es-zJd"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Vqq-Bc-aUY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -152,8 +153,8 @@
     </scenes>
     <resources>
         <image name="BPM" width="750" height="750"/>
+        <image name="StadisticsIcon" width="32" height="32"/>
         <image name="background-1" width="750" height="1334"/>
-        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

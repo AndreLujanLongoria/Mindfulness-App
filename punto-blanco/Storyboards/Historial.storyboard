@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-1" translatesAutoresizingMaskIntoConstraints="NO" id="j5E-19-9tC">
-                                <rect key="frame" x="-187.5" y="0.0" width="750" height="667"/>
+                                <rect key="frame" x="-187.5" y="0.0" width="750" height="618"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-Oc-akA">
-                                <rect key="frame" x="34" y="144" width="307" height="195"/>
+                                <rect key="frame" x="34" y="95" width="307" height="195"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iGQ-Oc-akA" secondAttribute="height" multiplier="307:195" id="vsa-ST-Wdl"/>
@@ -37,34 +37,34 @@
                                 </prototypes>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sjg-1g-t1d">
-                                <rect key="frame" x="34" y="396" width="307" height="76"/>
+                                <rect key="frame" x="34" y="347" width="307" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sjg-1g-t1d" secondAttribute="height" multiplier="307:76" id="W5a-do-Vah"/>
                                 </constraints>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZQ-Xh-bzi">
-                                <rect key="frame" x="34" y="522" width="307" height="76"/>
+                                <rect key="frame" x="34" y="473" width="307" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cZQ-Xh-bzi" secondAttribute="height" multiplier="307:76" id="vNG-JA-VXn"/>
                                 </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF4-GP-IEh">
-                                <rect key="frame" x="34" y="364" width="70" height="24"/>
+                                <rect key="frame" x="34" y="315" width="70" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-ty-OWw">
-                                <rect key="frame" x="34" y="490" width="76" height="24"/>
+                                <rect key="frame" x="34" y="441" width="76" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditaciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dg8-Y0-wWc">
-                                <rect key="frame" x="34" y="112" width="127" height="24"/>
+                                <rect key="frame" x="34" y="63" width="127" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,8 +112,9 @@
         <scene sceneID="MvQ-SH-Gx0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p1N-41-hOB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Historial" image="clock.arrow.circlepath" catalog="system" id="Q2Z-e5-Vyt"/>
+                    <tabBarItem key="tabBarItem" title="Historial" image="HistoryIcon" id="1K3-E6-JXJ"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0Iw-bu-NXc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -129,8 +130,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HistoryIcon" width="32" height="32"/>
         <image name="background-1" width="750" height="1334"/>
-        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
