@@ -65,7 +65,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" red="0.90618914370000003" green="0.91814333199999998" blue="0.92775350810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Logout"/>
+                                <state key="normal" title="Salir"/>
                                 <connections>
                                     <action selector="logoutFromSession:" destination="FIb-pz-gMl" eventType="touchUpInside" id="uDn-8g-HE0"/>
                                 </connections>
