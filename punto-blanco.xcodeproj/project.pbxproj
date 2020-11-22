@@ -36,8 +36,6 @@
 		EC34D294255CA83F00A73810 /* TableViewCellGeneral.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC34D292255CA83F00A73810 /* TableViewCellGeneral.swift */; };
 		EC34D295255CA83F00A73810 /* TableViewCellGeneral.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC34D293255CA83F00A73810 /* TableViewCellGeneral.xib */; };
 		EC6E1224255C743F00358557 /* ViewControllerMeditationReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */; };
-		EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */; };
-		EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */; };
 		EC97535B2558F7F600E669CB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC97535A2558F7F600E669CB /* AVFoundation.framework */; };
 		EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */; };
 		ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC10D7D2558643300CA9FA3 /* Historial.storyboard */; };
@@ -98,8 +96,6 @@
 		EC34D292255CA83F00A73810 /* TableViewCellGeneral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellGeneral.swift; sourceTree = "<group>"; };
 		EC34D293255CA83F00A73810 /* TableViewCellGeneral.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellGeneral.xib; sourceTree = "<group>"; };
 		EC6E1223255C743F00358557 /* ViewControllerMeditationReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMeditationReview.swift; sourceTree = "<group>"; };
-		EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellSecciones.swift; sourceTree = "<group>"; };
-		EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCellSecciones.xib; sourceTree = "<group>"; };
 		EC97535A2558F7F600E669CB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC97535D2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "mediacion guiada 5 minutos.mp3"; sourceTree = "<group>"; };
 		ECC10D7D2558643300CA9FA3 /* Historial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Historial.storyboard; sourceTree = "<group>"; };
@@ -164,7 +160,6 @@
 				EC97535C2558F81600E669CB /* Music */,
 				EC0FAE2C2557D70400366370 /* Storyboards */,
 				ECE422E42559031000B55FA0 /* TableViewCellMeditaciones.swift */,
-				EC760AD5255661B200D5D5E7 /* CollectionViewCellSecciones.swift */,
 				CDD9A3FE2552551100DFD5CA /* Info.plist */,
 				CDD9A3F92552551100DFD5CA /* Assets.xcassets */,
 			);
@@ -197,7 +192,6 @@
 				EC0FAE372557D77E00366370 /* Home.storyboard */,
 				EC0FAE3D2557D7EB00366370 /* Estadisticas.storyboard */,
 				ECC10D7D2558643300CA9FA3 /* Historial.storyboard */,
-				EC760AD6255661B200D5D5E7 /* CollectionViewCellSecciones.xib */,
 				ECE422E52559031000B55FA0 /* TableViewCellMeditaciones.xib */,
 				EC34D293255CA83F00A73810 /* TableViewCellGeneral.xib */,
 			);
@@ -357,7 +351,6 @@
 				EC34D295255CA83F00A73810 /* TableViewCellGeneral.xib in Resources */,
 				EC97535E2558F89D00E669CB /* mediacion guiada 5 minutos.mp3 in Resources */,
 				ECC10D7E2558643300CA9FA3 /* Historial.storyboard in Resources */,
-				EC760AD8255661B200D5D5E7 /* CollectionViewCellSecciones.xib in Resources */,
 				EC0FAE3E2557D7EB00366370 /* Estadisticas.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,7 +394,6 @@
 				EC34D294255CA83F00A73810 /* TableViewCellGeneral.swift in Sources */,
 				CD0CA1C125526C7800C959AE /* ViewControllerPerfil.swift in Sources */,
 				AAE27D1B25546073002E5005 /* Reto.swift in Sources */,
-				EC760AD7255661B200D5D5E7 /* CollectionViewCellSecciones.swift in Sources */,
 				AAE27D1625545C67002E5005 /* Evento.swift in Sources */,
 				EC34D280255C93CD00A73810 /* ViewControllerSignUp.swift in Sources */,
 				CD0CA1D02552713000C959AE /* ViewControllerRegistroAntes.swift in Sources */,

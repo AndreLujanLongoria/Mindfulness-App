@@ -13,10 +13,9 @@ class ViewControllerMeditacion: UIViewController {
     @IBOutlet weak var cvSecciones: UICollectionView!
     
     var ListaMeditaciones = [
-        Meditaciones(Nombre: "Empatía", foto: UIImage(named: "empatia")),
-        Meditaciones(Nombre: "Luz", foto: UIImage(named: "luz"))
+           Meditaciones(Nombre: "Empatía", foto: UIImage(named: "empatia")),
+           Meditaciones(Nombre: "Luz", foto: UIImage(named: "luz"))
     ]
-    
     
     /*
      ---Nombre de variables----
@@ -31,44 +30,11 @@ class ViewControllerMeditacion: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        
-        cvSecciones.register(CollectionViewCellSecciones.nib(), forCellWithReuseIdentifier: CollectionViewCellSecciones.identifier)
+ 
         tvMedit.register(TableViewCellMeditaciones.nib(), forCellReuseIdentifier: TableViewCellMeditaciones.identifier)
 
         self.tvMedit.delegate = self
         self.tvMedit.dataSource = self
-        self.cvSecciones.delegate = self
-        self.cvSecciones.dataSource = self
-    }
-}
-
-extension ViewControllerMeditacion : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 12
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let item = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellSecciones.identifier, for: indexPath) as! CollectionViewCellSecciones
-        
-        item.configure(with: "Seccion")
-        
-        return item
-    }
-    /*
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 120, height: 120)
-    }
-     
-     
-     */
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.landscape
-    }
-    
-    override var shouldAutorotate: Bool {
-        return false
     }
 }
 
