@@ -9,10 +9,16 @@ import UIKit
 
 class ViewControllerMeditationReview: UIViewController {
 
+    
+    @IBOutlet weak var calificarButton: UIButton!
+    @IBOutlet weak var terminarButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Felicidades"
+        calificarButton.layer.cornerRadius = 30
+        terminarButton.layer.cornerRadius = 30
     }
     
     @IBAction func bpmAfterButton(_ sender: UIButton) {

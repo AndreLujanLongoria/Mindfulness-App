@@ -623,6 +623,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vt5-vR-GvJ"/>
+                    <connections>
+                        <outlet property="calificarButton" destination="yj1-Po-gnY" id="Tb2-ea-fbV"/>
+                        <outlet property="terminarButton" destination="f0c-g0-qZF" id="AYq-Si-11f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wK-0u-DxQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
