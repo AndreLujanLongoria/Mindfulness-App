@@ -16,24 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ritmo cardiaco promedio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-99-IbL">
-                                <rect key="frame" x="97" y="205.66666666666666" width="196" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio Semanal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0L-4eB">
-                                <rect key="frame" x="122.00000000000001" y="412" width="146.33333333333337" height="20.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-a4-ieJ">
-                                <rect key="frame" x="185" y="296" width="107.66666666666669" height="67"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
-                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0uw-SS-MFM">
                                 <rect key="frame" x="42" y="565" width="307" height="124"/>
                                 <subviews>
@@ -86,8 +68,26 @@
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-mJ-y6Z">
-                                <rect key="frame" x="88" y="302" width="29.666666666666657" height="57.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ritmo cardiaco promedio:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-99-IbL">
+                                <rect key="frame" x="46" y="284" width="291" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio Semanal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0L-4eB">
+                                <rect key="frame" x="118" y="454" width="146.33333333333337" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-a4-ieJ">
+                                <rect key="frame" x="237" y="333" width="107.66666666666666" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-mJ-y6Z">
+                                <rect key="frame" x="54" y="338" width="113" height="57.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -96,24 +96,24 @@
                         <viewLayoutGuide key="safeArea" id="n9N-na-gcG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="UPA-0L-4eB" secondAttribute="trailing" constant="121.67" id="01F-Cv-m2j"/>
-                            <constraint firstItem="PS9-99-IbL" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="97" id="1Tg-mt-arq"/>
-                            <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="PBj-a4-ieJ" secondAttribute="bottom" constant="49" id="3DZ-Wr-SiO"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="67.333333333333343" id="5xk-9Q-e6L"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="67.333333333333343" id="9cN-aS-RVO"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="UPA-0L-4eB" secondAttribute="trailing" constant="125.66666666666663" id="01F-Cv-m2j"/>
+                            <constraint firstItem="PS9-99-IbL" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="46" id="1Tg-mt-arq"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="PBj-a4-ieJ" secondAttribute="bottom" constant="54" id="3DZ-Wr-SiO"/>
+                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="69.999999999999972" id="5xk-9Q-e6L"/>
+                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="69.999999999999972" id="9cN-aS-RVO"/>
                             <constraint firstItem="0uw-SS-MFM" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="42" id="9jH-fh-eCu"/>
-                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="top" secondItem="PS9-99-IbL" secondAttribute="bottom" constant="70" id="AxE-fk-Xfk"/>
-                            <constraint firstItem="Upe-mJ-y6Z" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="88" id="Ejo-1M-06I"/>
+                            <constraint firstItem="PBj-a4-ieJ" firstAttribute="top" secondItem="PS9-99-IbL" secondAttribute="bottom" constant="29" id="AxE-fk-Xfk"/>
+                            <constraint firstItem="Upe-mJ-y6Z" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="54" id="Ejo-1M-06I"/>
                             <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="ldy-8O-Pl4" secondAttribute="trailing" constant="108" id="Fg4-MP-5sA"/>
                             <constraint firstItem="ldy-8O-Pl4" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="109" id="GYL-cC-MTV"/>
-                            <constraint firstItem="ldy-8O-Pl4" firstAttribute="top" secondItem="UPA-0L-4eB" secondAttribute="bottom" constant="65.670000000000002" id="HbL-cZ-EUl"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PS9-99-IbL" secondAttribute="trailing" constant="97" id="IdG-WX-YRy"/>
+                            <constraint firstItem="ldy-8O-Pl4" firstAttribute="top" secondItem="UPA-0L-4eB" secondAttribute="bottom" constant="23.666666666666686" id="HbL-cZ-EUl"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PS9-99-IbL" secondAttribute="trailing" constant="53" id="IdG-WX-YRy"/>
                             <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="0uw-SS-MFM" secondAttribute="trailing" constant="41" id="MQZ-sP-dPF"/>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PBj-a4-ieJ" secondAttribute="trailing" constant="97.333333333333371" id="SSI-Ld-IkH"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="PBj-a4-ieJ" secondAttribute="trailing" constant="45.333333333333371" id="SSI-Ld-IkH"/>
                             <constraint firstItem="0uw-SS-MFM" firstAttribute="top" secondItem="ldy-8O-Pl4" secondAttribute="bottom" constant="43" id="Z2u-xy-tfL"/>
-                            <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="Upe-mJ-y6Z" secondAttribute="bottom" constant="52.666666666666686" id="cdU-Q9-2Yp"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="Upe-mJ-y6Z" secondAttribute="bottom" constant="58.666666666666686" id="cdU-Q9-2Yp"/>
                             <constraint firstItem="n9N-na-gcG" firstAttribute="bottom" secondItem="0uw-SS-MFM" secondAttribute="bottom" constant="72" id="fv1-Gx-ERE"/>
-                            <constraint firstItem="UPA-0L-4eB" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="122" id="qEJ-Y3-bQN"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="118" id="qEJ-Y3-bQN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w05-4D-GTr"/>

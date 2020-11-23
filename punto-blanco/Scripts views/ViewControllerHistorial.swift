@@ -10,6 +10,9 @@ import UIKit
 class ViewControllerHistorial: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tablaMedit: UITableView!
+    @IBOutlet weak var tablaNotas: UITableView!
+    @IBOutlet weak var tablaEventos: UITableView!
+    
     var registro = [Usuario]()
     var cantidad : Int!
     
@@ -45,9 +48,6 @@ class ViewControllerHistorial: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,23 +57,23 @@ class ViewControllerHistorial: UIViewController, UITableViewDataSource, UITableV
         tablaMedit.dataSource = self
         obtenerRegistro()
         tablaMedit.reloadData()
+        
+        //table view notas
+        tablaNotas.delegate = self
+        tablaNotas.dataSource = self
+        
+        //table view eventos
+        tablaEventos.delegate = self
+        tablaEventos.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         obtenerRegistro()
         tablaMedit.reloadData()
+        tablaNotas.reloadData()
+        tablaEventos.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
     }

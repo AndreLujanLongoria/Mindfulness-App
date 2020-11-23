@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-Oc-akA">
-                                <rect key="frame" x="0.0" y="95" width="375" height="195"/>
+                                <rect key="frame" x="0.0" y="139" width="375" height="195"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="iGQ-Oc-akA" secondAttribute="height" multiplier="307:195" constant="68" id="vsa-ST-Wdl"/>
@@ -34,34 +34,34 @@
                                 </prototypes>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sjg-1g-t1d">
-                                <rect key="frame" x="0.0" y="347" width="375" height="76"/>
+                                <rect key="frame" x="0.0" y="391" width="375" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="sjg-1g-t1d" secondAttribute="height" multiplier="307:76" constant="68" id="W5a-do-Vah"/>
                                 </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF4-GP-IEh">
-                                <rect key="frame" x="34" y="315" width="70" height="24"/>
+                                <rect key="frame" x="34" y="359" width="70" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="3" height="3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-ty-OWw">
-                                <rect key="frame" x="34" y="441" width="76" height="24"/>
+                                <rect key="frame" x="34" y="485" width="76" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZQ-Xh-bzi">
-                                <rect key="frame" x="0.0" y="473" width="375" height="76"/>
+                                <rect key="frame" x="0.0" y="517" width="375" height="76"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cZQ-Xh-bzi" secondAttribute="height" multiplier="307:76" constant="68" id="vNG-JA-VXn"/>
                                 </constraints>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pulsos pasados" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2V-iY-Cds">
-                                <rect key="frame" x="34" y="63" width="148" height="24"/>
+                                <rect key="frame" x="34" y="107" width="148" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
@@ -87,7 +87,7 @@
                             <constraint firstItem="09W-RV-qnE" firstAttribute="trailing" secondItem="cZQ-Xh-bzi" secondAttribute="trailing" id="aaZ-wc-NuN"/>
                             <constraint firstItem="sjg-1g-t1d" firstAttribute="top" secondItem="cF4-GP-IEh" secondAttribute="bottom" constant="8" symbolic="YES" id="cDg-uQ-EeY"/>
                             <constraint firstItem="cZQ-Xh-bzi" firstAttribute="leading" secondItem="09W-RV-qnE" secondAttribute="leading" id="ewu-ck-rSD"/>
-                            <constraint firstItem="09W-RV-qnE" firstAttribute="bottom" secondItem="cZQ-Xh-bzi" secondAttribute="bottom" constant="69" id="hRw-Ox-y2q"/>
+                            <constraint firstItem="09W-RV-qnE" firstAttribute="bottom" secondItem="cZQ-Xh-bzi" secondAttribute="bottom" constant="25" id="hRw-Ox-y2q"/>
                             <constraint firstItem="T2V-iY-Cds" firstAttribute="leading" secondItem="09W-RV-qnE" secondAttribute="leading" constant="34" id="uqL-sR-Umd"/>
                             <constraint firstItem="09W-RV-qnE" firstAttribute="trailing" secondItem="sjg-1g-t1d" secondAttribute="trailing" id="z8G-0T-yUs"/>
                             <constraint firstItem="09W-RV-qnE" firstAttribute="trailing" secondItem="HFR-ty-OWw" secondAttribute="trailing" constant="265" id="zWk-1G-yKL"/>
@@ -95,7 +95,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="c3h-9o-hX5"/>
                     <connections>
+                        <outlet property="tablaEventos" destination="cZQ-Xh-bzi" id="8Uv-N2-tge"/>
                         <outlet property="tablaMedit" destination="iGQ-Oc-akA" id="f94-6Z-OhP"/>
+                        <outlet property="tablaNotas" destination="sjg-1g-t1d" id="NF5-T5-XNu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="in1-0H-Ec9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
