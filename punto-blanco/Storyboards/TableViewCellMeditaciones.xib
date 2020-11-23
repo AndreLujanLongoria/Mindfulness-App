@@ -26,14 +26,14 @@
                                 <color key="tintColor" red="0.0" green="0.54893583059999995" blue="0.57591593269999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulo =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-uM-aC0">
-                                <rect key="frame" x="119" y="13" width="58" height="21"/>
+                                <rect key="frame" x="119" y="13" width="348" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duracion =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3M-ty-oJv">
-                                <rect key="frame" x="119" y="46" width="83" height="21"/>
+                                <rect key="frame" x="119" y="46" width="214" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -56,7 +56,9 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="duracionText" destination="T3M-ty-oJv" id="caI-Mo-6eg"/>
                 <outlet property="imgCustom" destination="v4h-G1-G9F" id="sa5-Ue-B4C"/>
+                <outlet property="tituloText" destination="DTU-uM-aC0" id="R12-uu-RZ0"/>
                 <outlet property="viewButton" destination="4Wu-2u-okJ" id="bdR-8H-G93"/>
             </connections>
             <point key="canvasLocation" x="-333.60000000000002" y="239.73013493253376"/>

@@ -17,6 +17,10 @@ class TableViewCellMeditaciones: UITableViewCell {
     @IBOutlet weak var imgCustom: UIImageView!
     @IBOutlet weak var customCell: UIView!
     
+    
+    @IBOutlet weak var tituloText: UILabel!
+    @IBOutlet weak var duracionText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         viewButton.clipsToBounds = true
@@ -33,8 +37,12 @@ class TableViewCellMeditaciones: UITableViewCell {
         return UINib(nibName: "TableViewCellMeditaciones", bundle: nil)
     }
     
-    public func configure(with image: UIImage){
-        imgCustom.image = image
+    public func configureTitulo(with titulo: String){
+        tituloText.text = titulo
+    }
+    
+    public func configureDuracion(with duracion: String){
+        duracionText.text = duracion
     }
     
 }

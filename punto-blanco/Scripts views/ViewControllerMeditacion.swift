@@ -45,7 +45,9 @@ extension ViewControllerMeditacion : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tabliew: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celda = tvMedit.dequeueReusableCell(withIdentifier: "customCell") as! TableViewCellMeditaciones
-        //celda.imgCustom.image = UIImage(named: "")
+        
+        celda.configureTitulo(with: "Titulo = Meditacion para estudiar")
+        celda.configureDuracion(with: "Duracion = 3 min")
         
         return celda
     }
