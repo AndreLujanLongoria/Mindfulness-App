@@ -69,19 +69,19 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ritmo cardiaco promedio:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS9-99-IbL">
-                                <rect key="frame" x="46" y="284" width="291" height="20"/>
+                                <rect key="frame" x="46" y="283.66666666666669" width="291" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio Semanal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0L-4eB">
-                                <rect key="frame" x="118" y="454" width="146.33333333333337" height="20.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promedio Semanal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPA-0L-4eB">
+                                <rect key="frame" x="42" y="454" width="295" height="20"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="bpm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBj-a4-ieJ">
-                                <rect key="frame" x="237" y="333" width="107.66666666666666" height="67"/>
+                                <rect key="frame" x="236.99999999999997" y="333" width="107.66666666666666" height="67"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <color key="textColor" red="0.13720634579999999" green="0.1158073619" blue="0.2364997566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -96,7 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="n9N-na-gcG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="UPA-0L-4eB" secondAttribute="trailing" constant="125.66666666666663" id="01F-Cv-m2j"/>
+                            <constraint firstItem="n9N-na-gcG" firstAttribute="trailing" secondItem="UPA-0L-4eB" secondAttribute="trailing" constant="53" id="01F-Cv-m2j"/>
                             <constraint firstItem="PS9-99-IbL" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="46" id="1Tg-mt-arq"/>
                             <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="PBj-a4-ieJ" secondAttribute="bottom" constant="54" id="3DZ-Wr-SiO"/>
                             <constraint firstItem="PBj-a4-ieJ" firstAttribute="leading" secondItem="Upe-mJ-y6Z" secondAttribute="trailing" constant="69.999999999999972" id="5xk-9Q-e6L"/>
@@ -113,7 +113,7 @@
                             <constraint firstItem="0uw-SS-MFM" firstAttribute="top" secondItem="ldy-8O-Pl4" secondAttribute="bottom" constant="43" id="Z2u-xy-tfL"/>
                             <constraint firstItem="UPA-0L-4eB" firstAttribute="top" secondItem="Upe-mJ-y6Z" secondAttribute="bottom" constant="58.666666666666686" id="cdU-Q9-2Yp"/>
                             <constraint firstItem="n9N-na-gcG" firstAttribute="bottom" secondItem="0uw-SS-MFM" secondAttribute="bottom" constant="72" id="fv1-Gx-ERE"/>
-                            <constraint firstItem="UPA-0L-4eB" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="118" id="qEJ-Y3-bQN"/>
+                            <constraint firstItem="UPA-0L-4eB" firstAttribute="leading" secondItem="n9N-na-gcG" secondAttribute="leading" constant="42" id="qEJ-Y3-bQN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="w05-4D-GTr"/>

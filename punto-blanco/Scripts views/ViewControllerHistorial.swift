@@ -57,14 +57,7 @@ class ViewControllerHistorial: UIViewController, UITableViewDataSource, UITableV
         tablaMedit.dataSource = self
         obtenerRegistro()
         tablaMedit.reloadData()
-        
-        //table view notas
-        tablaNotas.delegate = self
-        tablaNotas.dataSource = self
-        
-        //table view eventos
-        tablaEventos.delegate = self
-        tablaEventos.dataSource = self
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
